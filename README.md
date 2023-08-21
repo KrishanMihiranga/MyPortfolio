@@ -6,4 +6,4 @@ sitemap - https://www.gloomaps.com/EwMojZDFE3  <br>
 wireframe -https://drive.google.com/file/d/1SNZz0Dx4n4mdvhH49HAkFnxN91Q09hgk/view?usp=sharingk <br>
 mockup -https://www.figma.com/file/Pctm4cHAe0arYR4cn2eWbM/Portfolio?type=design&node-id=0%3A1&mode=design&t=TPT0tjUedqVQp1KY-1
 ### live at:
- https://krishanmihiranga.github.io/MyPortfolio/
+https://krishanmihiranga.github.io/MyPortfolio/
