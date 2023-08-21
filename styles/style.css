@@ -34,7 +34,7 @@ hr{
     color: #1f242d;
 }
 
-/* -----------home------------------- */
+/* ------------------Header------------------- */
 
 .header{
     overflow-x: hidden;
@@ -49,7 +49,7 @@ hr{
     align-items: center;
     backdrop-filter: blur(10px);
     border-bottom: 2px solid rgba(255, 255, 255, .2);
-    z-index: 5;
+    z-index: 100;
 }
 .header::before{
     content: '';
@@ -83,6 +83,8 @@ hr{
 .navbar a:hover{
     color: #0ef;
 }
+
+/* ------------------Home------------------- */
 #home{
     background: url("../Assets/img/bg 1.png")center center no-repeat;
     background-size: cover;
@@ -96,21 +98,22 @@ hr{
 }
 #home-image-wrapper{
     position: absolute;
-    width: 50vw;
-    height: 880px;
+    width: 60vw;
+    height: 95vh;
     position: absolute;
     right: 0;
     bottom: 0;
     overflow: hidden;
 }
 #home-image-cyan-circle{
+    margin-top: 5vh;
     position: absolute;
     box-sizing: border-box;
     height: 130vh;
     aspect-ratio: 1/1;
     border-radius: 100%;
-    left: 0;
-    top: 9vh;
+    left: 80px;
+    top: 40px;
     border: 120px solid #0ef;
     opacity: .9;
 }
@@ -119,13 +122,13 @@ hr{
     position: absolute;
     bottom: -10px;
     right: 0;
-    left: -100px;
+    left: -30px;
     width: fit-content;
     height: fit-content;
     margin: auto;
 }
 .home-image>img{
-    height: 87vh;
+    height: 95vh;
     width: auto;
 }
 .home-content{
@@ -203,8 +206,8 @@ hr{
     align-items: center;
     background: rgba(255, 255, 255, 0.05);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(0,238,255, 0.1);
+    border-bottom: 1px solid rgba(0,238,255, 0.1);
     border-radius: 30px;
     color: #fff;
     z-index: 1;
@@ -226,52 +229,166 @@ top: 0;
 left: 0;
 width: 50%;
 height: 100%;
-background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
+background: linear-gradient(to left, rgba(255, 255, 255, 0.05), transparent);
 transform: skewX(45deg) translateX(0);
 transition: 0.5s;
 }
 .btn:hover a::before{
     transform: skewX(45deg) translateX(200%);
 }
-.btn::before{
-    content: '';
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -5px;
-    width: 50px;
-    height: 10px;
-    background: #0ef;
-    border-radius: 10px;
-    transition: 0.5s;
-    transition-delay: 0s;
-}
-.btn:hover::before{
-    bottom: 0;
-    height: 50%;
-    width: 80%;
-    border-radius: 30px;
-    transition-delay: 0.5s;
-}
-.btn::after{
-    content: '';
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: -5px;
-    width: 50px;
-    height: 10px;
-    background: #0ef;
-    border-radius: 10px;
-    transition: 0.5s;
-    transition-delay: 0s;
-}
-.btn:hover::after{
-    top: 0;
-    height: 80%;
-    width: 88%;
-    border-radius: 30px;
-    transition-delay: 0.5s;
-}
 
-/* ------------About-------------*/
+/* ------------------About------------------- */
+.aboutMe{
+    position: relative;
+}
+.center-subtopic{
+text-align: center;
+font-size: 32px;
+margin-top: 50px;
+margin-bottom: 30px;
+letter-spacing: 8px;
+color: rgba(255, 255, 255, .5);
+}
+.middle-quote{
+    text-align: center;
+font-size: 18px;
+margin-top: 50px;
+margin-bottom: 30px;
+color: white;
+}
+.div-wrapper{
+    padding: 20px 10%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card
+{
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    margin-right: 100px;
+    background: transparent;
+    box-shadow: 0 15px 35px rgba(0,238,255, .3);
+}
+.card .lines
+{
+    position: absolute;
+    inset: 0;
+    background: #000;
+    overflow: hidden;
+}
+.card .lines::before
+{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 1000px;
+    height: 120px;
+    background: linear-gradient(transparent,#45f3ff,#45f3ff,#45f3ff,transparent);
+    animation: animate 4s linear infinite;
+}
+@keyframes animate
+{
+ 0%
+ {
+    transform: translate(-50%,-50%) rotate(0deg);
+ } 
+ 100%
+ {
+    transform: translate(-50%,-50%) rotate(360deg);
+ } 
+}
+.card .lines::after{
+    content: '';
+    position: absolute;
+    inset: 3px;
+    background: #1f242d;
+}
+.card-img{
+    width: 400px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-img img{
+height: 600px;
+width: auto;
+position: absolute;
+top: -103px;
+transition: height 0.3s ease, transform 0.3s ease;
+}
+.card-img img:hover{
+    height: 650px;
+    transform: translateY(-50px);
+}
+.right-div>h1{
+    position: relative;
+    font-size: 75px;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+.first-line{
+    position: absolute;
+    left: 5px;
+    bottom: 0;
+    margin: auto;
+    width: 85px;
+    height: 5px;
+    background-color: #0ef;
+}
+.second-line{
+    position: absolute;
+    left: 100px;
+    bottom: 0;
+    margin: auto;
+    width: 10px;
+    height: 5px;
+    background-color: #0ef;
+}
+.tab-titles{
+    display: flex;
+}
+.tab-links{
+    margin: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #0ef;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: .5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: #0ef;
+    font-size: 14px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+.right-div>p{
+    position: relative;
+    margin-top: 50px;
+    line-height: 25px;
+}
