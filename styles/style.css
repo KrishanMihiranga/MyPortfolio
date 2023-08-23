@@ -6,7 +6,8 @@
     scroll-behavior: smooth;
 }
 body{
-    background: #1f242d;
+    background: #141518;
+    /* 1f242d */
     color: #fff;
 }
 hr{
@@ -18,11 +19,11 @@ hr{
     width: 12px;
 }
 ::-webkit-scrollbar-track{
-    background-color: #1f242d;
+    background-color: #141518;
 
 }
 ::-webkit-scrollbar-thumb{
-    background-color: #1f242d;
+    background-color: #141518;
     border-radius: 10px;
     border: 1px solid #0ef;
 }
@@ -306,7 +307,7 @@ color: white;
     content: '';
     position: absolute;
     inset: 3px;
-    background: #1f242d;
+    background: #141518;
 }
 .card-img{
     width: 400px;
@@ -442,7 +443,7 @@ transition: height 0.3s ease, transform 0.3s ease;
 }
 .services-list div:hover{
     background-color: #0ef;
-    color: #1f242d;
+    color: #141518;
     transform: translateY(-10px);
 }
 .card-line{
@@ -451,8 +452,125 @@ transition: height 0.3s ease, transform 0.3s ease;
     margin-top: 10px;
     background-color: #0ef;
     position: absolute;
-    border: 1px solid #262626;
+    border: 1px solid #141518;
 }
 #services h5{
     margin-bottom: 80px;
+}
+
+/* ----------------skills---------------- */
+#skills{
+    overflow-x: hidden;
+    height: 300px;
+}
+.skill-showcase div{
+    margin-left: 80px;
+    margin-right: 80px;
+    width: 120px;
+    height: 120px;
+}
+.skill-showcase div:first-child{
+    background-image: url('../Assets/img/css.png');
+}
+.skill-showcase div:nth-child(2){
+    background-image: url('../Assets/img/html.png');
+}
+.skill-showcase div:nth-child(3){
+    background-image: url('../Assets/img/java.png');
+}
+.skill-showcase div:nth-child(4){
+    background-image: url('../Assets/img/mysql.png');
+}
+.skill-showcase div:last-child{
+    background-image: url('../Assets/img/javascript.png');
+}
+.skill-showcase{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 150px;
+    background: url('../Assets/img/skills-bg.png');
+    background-size: cover;
+}
+
+/* -----------------Portfolio------------------- */
+#portfolio{
+    padding: 0 10%;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    font-weight: 400;
+    color: #141518;
+    font-weight: 400;
+    width: 100%;
+    height: 0;
+    background: #0ef;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.layer a{
+    margin-top: 20px;
+    color: #0ef;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+
+}
+.wBtn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #0ef;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+.wBtn:hover{
+    background: #0ef;
 }
