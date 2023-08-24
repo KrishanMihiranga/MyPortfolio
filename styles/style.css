@@ -626,3 +626,175 @@ transition: height 0.3s ease, transform 0.3s ease;
     margin-top: 100px;
 }
 /* ----------------projects-done---------------- */
+
+#projects-done{
+    color: #141518;
+    background-color: #0ef;
+    margin: 100px 0 100px 0;
+    width: 100%;
+    height: 120px;
+}
+#projects-done-wrapper{
+    width: 100%;
+    height: 120px;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#projects-done-wrapper span{
+    text-align: center;
+}
+.projects-count{
+    font-size: 75px;
+    font-weight: 600;
+}
+.projects-heading{
+    font-size: 18px;
+    font-weight: 600;
+}
+/* -----------------------testimonial----------------- */
+
+#testimonial-topic{
+    text-align: center;
+}
+#testimonial h1{
+        font-size: 70px;
+        display: inline-block;
+        padding-bottom: 10px;
+}
+#testimonial-content-wrap{
+    margin: 100px 10% 100px 10%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+}
+#testimonial-left-div p:first-child{
+    color: #0ef;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+#testimonial-left-div p:nth-child(2){
+    font-size: 35px;
+    font-weight: 600;
+    margin-top: 15px;
+    white-space: nowrap;
+}
+#testimonial-left-div p:nth-child(3){
+    color: #B8B6B6;
+    margin: 15px 0 15px 0;
+    font-size: 18px;
+}
+#testimonial-left-div p:nth-child(4){
+    color: #B8B6B6;
+    margin: 15px 0 15px 0;
+    font-size: 18px;
+}
+#hireme-btn{
+    text-decoration: none;
+    width: 155px;
+    height: 50px;
+    background-color: #0ef;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid #141518;
+}
+#hireme-btn i{
+    font-size: 30px;
+    color: #141518;
+    margin: 5px;
+}
+#hireme-btn span{
+    font-weight: 600;
+    color: #141518;
+    margin: 5px;
+}
+#hireme-btn:hover{
+    border: 1px solid #0ef;
+    background-color: #141518;
+}
+#hireme-btn:hover i{
+    color: #0ef;
+}
+#hireme-btn:hover span{
+    color: #0ef;
+}
+#testimonial-right-div{
+    border: 1px solid yellow;
+}
+#testimonial-card{
+    background-color: #45f3ff;
+    height: 350px;
+    margin: 0 0 0 300px;
+}
+/* --------------------assignments---------------------- */
+#assignments-topics{
+    text-align: center;
+}
+#assignments h1{
+    font-size: 70px;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+/* ----------------------gallery-------------------- */
+#gallery-topic{
+    text-align: center;
+}
+#gallery h1{
+    font-size: 70px;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+/* -----------------contact----------------------- */
+#contact-topic{
+    text-align: center;
+}
+#contact-topic h1{
+    font-size: 60px;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+#contact-contact-wrapper{
+    display: flex;
+    padding: 20px 10%;
+    align-items: center;
+    justify-content: space-between;
+}
+#contact-left-div{
+    border: 1px solid red ;
+}
+#contact-left-div p:first-child{
+    color: #0ef;
+    font-size: 18px;
+    margin: 5px 0 5px 0 ;
+}
+#contact-left-div p:nth-child(2){
+    font-weight: 600;
+    font-size: 25px;
+    margin: 5px 0 5px 0 ;
+}
+#contact-left-div p:nth-child(3){
+    font-size: 15px;
+    margin: 10px 0 5px 0 ;
+}
+#contact-left-div p:nth-child(4){
+    font-size: 15px;
+    margin: 5px 0 5px 0 ;
+}
+#contact-left-div i{
+    font-size: 18px;
+    color: #0ef;
+}
+#contact-right-div{
+    border: 1px solid red;
+}
+#contact-right-div form input,textarea{
+    background-color: #1E1F1F;
+    margin: 0 0 10px 0;
+    text-decoration: none;
+    width: 500px;
+    border: none;
+}
