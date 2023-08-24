@@ -34,7 +34,38 @@ hr{
     background-color: #0ef;
     color: #1f242d;
 }
-
+#scroll {
+    position: fixed;
+    display: flex;
+    box-sizing: border-box;
+    bottom: 20px;
+    right: 10px;
+    width: 2.5vw;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border-radius: 100%;
+    background-color: #141518;
+    border: 1px solid #0ef;
+    aspect-ratio: 1/1;
+    color: #0ef;
+    z-index: 100;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    z-index: 100;
+  }
+   #scroll-value {
+    display: block;
+    height: calc(100% - 15px);
+    width: calc(100% - 15px);
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 35px;
+    color: #141518;
+  } 
+  
 /* ------------------Header------------------- */
 
 .header{
@@ -498,6 +529,16 @@ transition: height 0.3s ease, transform 0.3s ease;
 /* -----------------Portfolio------------------- */
 #portfolio{
     padding: 0 10%;
+    text-align: center;
+}
+#portfolio h1{
+    font-size: 75px;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+#portfolio .tab-titles{
+    display: inline-flex;
+    align-items: center;
 }
 .work-list{
     display: grid;
@@ -574,3 +615,14 @@ transition: height 0.3s ease, transform 0.3s ease;
 .wBtn:hover{
     background: #0ef;
 }
+.topmargin{
+    margin-top: 50px;
+    left: 0;
+    right: 0;
+    top: 50px;
+    margin: auto;
+}
+.topmargin-quote{
+    margin-top: 100px;
+}
+/* ----------------projects-done---------------- */
