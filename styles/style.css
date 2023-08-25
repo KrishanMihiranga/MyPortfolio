@@ -738,6 +738,9 @@ transition: height 0.3s ease, transform 0.3s ease;
     display: inline-block;
     padding-bottom: 10px;
 }
+#assignments{
+    padding: 20px 10%;
+}
 /* ----------------------gallery-------------------- */
 #gallery-topic{
     text-align: center;
@@ -746,6 +749,9 @@ transition: height 0.3s ease, transform 0.3s ease;
     font-size: 70px;
     display: inline-block;
     padding-bottom: 10px;
+}
+#gallery{
+    padding: 20px 10%;
 }
 
 /* -----------------contact----------------------- */
