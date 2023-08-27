@@ -708,7 +708,7 @@ a{
     margin: 100px 10% 100px 10%;
     height: fit-content;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 #testimonial-left-div p:first-child{
     color: #0ef;
@@ -762,13 +762,96 @@ a{
 #hireme-btn:hover span{
     color: #0ef;
 }
-#testimonial-right-div{
-    border: 1px solid yellow;
-}
-#testimonial-card{
+.testimonial-card{
     border: 1px solid #0ef;
+    background-color: #1e2529;
     height: 350px;
+    width: 600px;
     margin: 0 0 0 300px;
+    padding: 10px 10px;
+}
+.testimonial-img{
+    border: 2px solid #0ef;
+    width: 100px;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    display: inline-block;
+}
+#t-img1{
+    background: url('../Assets/profile_01.jpg')center center no-repeat;
+    background-size: cover;
+}
+.t-midlle-topics{
+    width: 300px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.t-midlle-topics p:first-child{
+    font-size: 50px;
+    font-weight: 600;
+}
+.t-midlle-topics p:last-child{
+    font-size: 15px;
+    font-weight: 600;
+    color: #0ef;
+}
+.t-top{
+    display: flex;
+    justify-content: space-around;    
+}
+.t-top i{
+    color: transparent;
+    font-size: 100px;
+    -webkit-text-stroke: 2px #0ef;
+}
+.testimonial-card>p{
+    color: gray;
+    font-weight: 500;
+    padding: 50px 20px 20px 20px;
+}
+.star{
+    margin: 30px 0 0 20px;
+    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+}
+.star i{
+    font-size: 25px;
+    color: #0ef;
+}
+.star i:nth-child(5){
+    color: transparent;
+    -webkit-text-stroke: 1px #0ef;
+}
+.rating{
+    margin: 0 0 0 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.t-nav{
+    display: inline-block;
+    position: relative;
+    margin-left: 250px;
+}
+.t-prev{
+    opacity: .5;
+}
+.t-prev:hover{
+    opacity: 1;
+}
+.t-next{
+    opacity: .5;
+}
+.t-next:hover{
+    opacity: 1;
+}
+.t-btn{
+    font-size: 60px;
+    cursor: pointer;
 }
 /* --------------------assignments---------------------- */
 #assignments-topics{
@@ -781,6 +864,102 @@ a{
 }
 #assignments{
     padding: 20px 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.assignments-card-bg{
+    margin: 80px 0 80px 0 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 40vw;
+    height: 28vh;
+    background-color: #1E1F1F;
+    border-radius: 30px;
+    background: url('../Assets/assignment-card-bg.gif') center center no-repeat;
+    background-size: cover;
+}
+.assignments-card-content-wrapper{
+    background-color: #f7f3f3;
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    border-radius: 30px 30px 30px 30px;
+}
+.assignments-middle-circle{
+    width: 120px;
+    aspect-ratio: 1/1;
+    background-color: white;
+    border-radius: 100%;
+    margin-top: 10px;
+    background: url('../Assets/middle.jpg')center center no-repeat;
+    background-size: cover;
+    z-index: 2;
+}
+.assignments-card-footer-topic{
+    color: black;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.assignments-card-footer-content{
+    color: black;
+}
+.assignments-card-content-wrapper a{
+    margin-top: 10px;
+    background-color: #0ef;
+    color: black;
+    font-weight: 600;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    font-size: 15px;
+    border-radius: 5px;
+    z-index: 2;
+}
+.assignments-card-content-wrapper a:hover{
+    background-color: #fff;   
+}
+.a-nav{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.a-prev{
+    opacity: .5;
+    position: relative;
+    right: 340%;
+    top: 30%;
+}
+.a-prev:hover{
+    opacity: 1;
+}
+.a-next{
+    opacity: .5;
+    position: relative;
+    left: 340%;
+    top: 30%;
+    
+}
+.a-next:hover{
+    opacity: 1;
+}
+.a-btn{
+    font-size: 100px;
+    cursor: pointer;
 }
 /* ----------------------gallery-------------------- */
 #gallery-topic {
@@ -796,6 +975,9 @@ a{
 #gallery {
     padding: 20px 10%;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .G-box {
@@ -906,6 +1088,9 @@ a{
 .img-wrapper:hover .image {
     filter: none;
     transform: scale(1.1);
+}
+#gallery .btn{
+    margin-top: 50px;
 }
 /* -----------------contact----------------------- */
 #contact-topic{
