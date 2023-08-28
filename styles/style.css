@@ -7,8 +7,8 @@
 }
 body{
     background: #141518;
-    /* 1f242d */
     color: #fff;
+    overflow-x: hidden;
 }
 hr{
     height: 3px;
@@ -209,6 +209,9 @@ hr{
 #role{
     color: #0ef;
 }
+.social-media{
+    animation: slideLeft 1s ease forwards;
+}
 .social-media a {
     display: inline-flex;
     justify-content: center;
@@ -224,7 +227,6 @@ hr{
     margin: 30px 20px 20px 0;
     transform: translateY(0);
     transition: transform 0.1s ease, background 0.1s ease, color 0.1s ease, box-shadow 0.1s ease;
-    animation: slideLeft 1s ease forwards;
 }
 
 .social-media a:hover {
@@ -1302,4 +1304,12 @@ footer{
 }
 footer div{
     font-size: 15px;
+}
+
+/* ------------------------portfolio page ----------------------------- */
+#portfolio-header{
+    position: relative;
+}
+#portfolio-footer{
+    margin-top: 10%;
 }

@@ -5,72 +5,239 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="Assets/img/icon.png" type="image/x-icon">
     <title>My Work</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header class="header">
-        <a href="index.html" class="logo">Portfolio.</a>
+
+    <header class="header" id="portfolio-header">
+        <a href="index.html" class="logo">Portfolio <span class="cyan">.</span></a>
     </header>
+    
     <div id="portfolio">
-    
-        <div>
-            <h1>Latest Work.</h1>
-            <div>
-                <p>All</p>
-                <p>Design</p>
-                <p>Html/CSS/JS</p>
-                <p>Java</p>
-            </div>
-            
-            <div id="html">
-                <div>
-                    <div>
-
-                        <div>
-                            <img src="Assets/animatedprofilecard.png">
-                            <div>
-                                <h3> Animated Profile card</h3>
-                                <p>My animated profile card, created using HTML and CSS, is a visually stunning and interactive design that showcases my skills and experience. With its modern layout and eye-catching animations. <br>Check it out for yourself and see what sets my animated profile card apart!</p>
-                                <a href="https://codepen.io/Mkrishan/pen/OJoyRBd" target="_blank"><i class='bx bx-link-external'></i></a>
-                            </div>
-                        </div>
-    
-                    </div>
-    
+        <h4 class="center-subtopic">PORTFOLIO</h4>
+        <h1>Latest Work<span class="cyan">.</span></h1>
+            <div class="container">
+                <div class="tab-titles">
+                    <p class="tab-links active-link">All</p>
+                    <p class="tab-links" >Design</p>
+                    <p class="tab-links" >Html/CSS/JS</p>
+                    <p class="tab-links" >Java</p>
                 </div>
-            </div>
-    
-    
-            <div id="java">
-                <div>
-                    <div>
 
-                        <div>
-                            <img src="Assets/4 in row 2.PNG">
-                            <div>
-                                <h3> connect four game</h3>
-                                <p>Connect Four is a classic strategy game that's easy to learn but challenging to master. The objective is to be the first player to connect four of your colored discs in a row, either vertically or horizontally while preventing your opponent from doing the same. With simple rules and endless possibilities, Connect Four is a fun and engaging game for players of all ages and skill levels.</p>
-                                <a href="https://github.com/KrishanMihiranga/connect-four-game.git" target="_blank"><i class='bx bx-link-external'></i></a>
+                <div class="tab-contents active-tab" id="all">
+                    <div class="container">
+                        <div class="work-list">
+                            
+                            <div class="work-card">
+                                <div class="image-container">
+                                    <img src="Assets/projects/card1.PNG" alt="metaverse">
+                                </div>
+                                <div class="work-card-footer">
+                                    <span>1 month ago</span>
+                                    <h3>Interactive card</h3>
+                                    <p>
+                                        Fashioned using HTML/CSS, my interactive card seamlessly merges text, images, and buttons. Enhanced by CSS animations, it's engaging & functional for dynamic websites.
+                                    </p>
+                                    <a href="https://github.com/KrishanMihiranga/interactive-card" target="_blank" class="read-more">Read More <span>&rarr;</span></a>
+                                </div>
                             </div>
-                        </div>
-                       
-                    </div>
-    
-                </div>
-            </div>
 
-            <h5>"Turning ideas into reality,one algorithm at a time."</h5>
+                            <div class="work-card">
+                                <div class="image-container">
+                                    <img src="Assets/projects/netflix.PNG" alt="metaverse">
+                                </div>
+                                <div class="work-card-footer">
+                                    <span>1 month ago</span>
+                                    <h3>Netflix Clone</h3>
+                                    <p>
+                                        Emulating Netflix's style, my HTML/CSS homepage clone offers a familiar interface with featured content, genres, and smooth design.Resembles Netflix, offers familiar interface.
+                                    </p>
+                                    <a href="https://github.com/KrishanMihiranga/Netflix-Clone" target="_blank"  class="read-more">Read More <span>&rarr;</span></a>
+                                </div>
+                            </div>
+                             
+                            <div class="work-card">
+                                <div class="image-container">
+                                    <img src="Assets/projects/checkbox1.PNG" alt="metaverse">
+                                </div>
+                                <div class="work-card-footer">
+                                    <span>1 month ago</span>
+                                    <h3>checkbox</h3>
+                                    <p>
+                                        Designed using HTML/CSS, my glowing checkbox adds flair to forms. When selected, it emits a subtle, visually appealing glow effect.CSS-powered checkbox glows elegantly when clicked.
+                                    </p>
+                                    <a href="https://github.com/KrishanMihiranga/glowing-checkbox" target="_blank" class="read-more">Read More <span>&rarr;</span></a>
+                                </div>
+                            </div>
+                              
+                            <div class="work-card">
+                                <div class="image-container">
+                                    <img src="Assets/projects/chatroom.png" alt="metaverse">
+                                </div>
+                                <div class="work-card-footer">
+                                    <span>2 month ago</span>
+                                    <h3>Chat Room</h3>
+                                    <p>
+                                        Built using Java sockets, my chatroom enables real-time communication. Users can exchange messages swiftly within a networked environment.Java chatroom facilitates real-time communication.
+                                    </p>
+                                    <a href="https://github.com/KrishanMihiranga/chatroom-applcation" target="_blank" class="read-more">Read More <span>&rarr;</span></a>
+                                </div>
+                            </div>
+                               
+                            <div class="work-card">
+                                <div class="image-container">
+                                    <img src="Assets/projects/reservate.png" alt="metaverse">
+                                </div>
+                                <div class="work-card-footer">
+                                    <span>2 month ago</span>
+                                    <h3>Reservate</h3>
+                                    <p>
+                                        In my first semester, I created a Java-based hotel management system. This efficient system handles bookings, guest information, and room management, streamlining hotel operations.
+                                    </p>
+                                    <a href="https://github.com/KrishanMihiranga/reservate-Layered" target="_blank" class="read-more">Read More <span>&rarr;</span></a>
+                                </div>
+                            </div>
+                             
+                            <div class="work-card">
+                                <div class="image-container">
+                                    <img src="Assets/projects/web1.PNG" alt="metaverse">
+                                </div>
+                                <div class="work-card-footer">
+                                    <span>6 month ago</span>
+                                    <h3>portfolio</h3>
+                                    <p>
+                                        Crafted with HTML, CSS, and JS, my portfolio website showcases my skills, projects, and personality through interactive design.Interactive portfolio reflects skills creatively.
+                                    </p>
+                                    <a href="https://github.com/KrishanMihiranga/KrishanMihiranga.github.io" target="_blank" class="read-more">Read More <span>&rarr;</span></a>
+                                </div>
+                            </div>
+                                 
+                            <div class="work-card">
+                                <div class="image-container">
+                                    <img src="Assets/projects/4inrow.PNG" alt="4inrow">
+                                </div>
+                                <div class="work-card-footer">
+                                    <span>6 month ago</span>
+                                    <h3>Connect 4 </h3>
+                                    <p>
+                                        Designed in Java, my Connect 4 game employs the Min-Max algorithm for intelligent AI moves, ensuring challenging and strategic gameplay.Java Connect 4 game, strategic AI.
+                                    </p>
+                                    <a href="https://github.com/KrishanMihiranga/connect-four-game" target="_blank" class="read-more">Read More <span>&rarr;</span></a>
+                                </div>
+                            </div>
+                            
+                            <div class="work-card">
+                                <div class="image-container">
+                                    <img src="Assets/projects/profilecard1.png" alt="profilecard">
+                                </div>
+                                <div class="work-card-footer">
+                                    <span>6 month ago</span>
+                                    <h3>profile card</h3>
+                                    <p>
+                                        Crafted with HTML/CSS, my animated profile card comes to life with captivating animations, showcasing information dynamically and creatively.CSS-animated profile card displays creativity.
+                                    </p>
+                                    <a href="https://github.com/KrishanMihiranga/animated-profile-card" target="_blank" class="read-more">Read More <span>&rarr;</span></a>
+                                </div>
+                            </div>
+                                 
+                            <div class="work-card">
+                                <div class="image-container">
+                                    <img src="Assets/projects/aquabuddy.png" alt="metaverse">
+                                </div>
+                                <div class="work-card-footer">
+                                    <span>6 month ago</span>
+                                    <h3>aqua buddy</h3>
+                                    <p>
+                                        Matrix (pvt) Ltd. developed software for Soysa Aquarium in Panadura, completing in 1.5 months. It efficiently manages the aquarium and measures water temperature and pH.
+                                    </p>
+                                    <a href="https://github.com/KrishanMihiranga/Soysa-Aquarium" target="_blank" class="read-more">Read More <span>&rarr;</span></a>
+                                </div>
+                            </div>
+                             
+                            <div class="work-card">
+                                <div class="image-container">
+                                    <img src="Assets/projects/stopwatch.png" alt="metaverse">
+                                </div>
+                                <div class="work-card-footer">
+                                    <span>6 month ago</span>
+                                    <h3>stop watch</h3>
+                                    <p>
+                                        Using JavaFX, I designed a functional stopwatch application. It accurately tracks time, features start/pause/reset controls, and offers a user-friendly interface.JavaFX stopwatch tracks time precisely.
+                                    </p>
+                                    <a href="https://github.com/KrishanMihiranga/stopWatch-javaFX" target="_blank" class="read-more">Read More <span>&rarr;</span></a>
+                                </div>
+                            </div>
+                           
+                            <div class="work-card">
+                                <div class="image-container">
+                                    <img src="Assets/projects/login.png" alt="metaverse">
+                                </div>
+                                <div class="work-card-footer">
+                                    <span>6 month ago</span>
+                                    <h3>animated login</h3>
+                                    <p>
+                                        Using JavaFX, I created an animated login interface that blends aesthetics and functionality, ensuring engaging user interactions and seamless authentication.Dynamic JavaFX login.
+                                    </p>
+                                    <a href="https://github.com/KrishanMihiranga/AnimatedLoginform-javaFX" target="_blank" class="read-more">Read More <span>&rarr;</span></a>
+                                </div>
+                            </div>
+                             
+                            <div class="work-card">
+                                <div class="image-container">
+                                    <img src="Assets/projects/cli-student-management.png" alt="cli-student-management">
+                                </div>
+                                <div class="work-card-footer">
+                                    <span>7 month ago</span>
+                                    <h3>Student management</h3>
+                                    <p>
+                                        Efficient CLI student system in Java, managing records seamlessly through a user-friendly command-line interface.Java CLI system efficiently manages students.
+                                    </p>
+                                    <a href="https://github.com/KrishanMihiranga/studentManagementSystem-java" target="_blank" class="read-more">Read More <span>&rarr;</span></a>
+                                </div>
+                            </div>
+                             
+                        </div>
+        
+                    </div>
+                </div>
+
+                <div class="tab-contents" id="html">
+                    <div class="container">
+                        <div class="work-list">
+                            
+                             
+                        </div>
+        
+                    </div>
+                </div>
+        
+        
+                <div class="tab-contents " id="java">
+                    <div class="container">
+                        <div class="work-list">
+                           
+        
+                    </div>
+                </div>
+        
+                <div class="tab-contents" id="reactntv">
+                    <div class="container">
+                        <div class="work-list">
+                           
+        
+                        </div>
+        
+                    </div>
+                </div>
+        </div>
+      </div>  
     </div>
-     </div>
-     <footer>
+
+     <footer id="portfolio-footer">
         <div class="copyright">
             <p><i class='bx bx-copyright'></i> 2023 Kishan. All rights reserved. Building the future one line of code at a time.</p>
-            <div class="social-media">
-                <a href="https://github.com/KrishanMihiranga"  id="git"><i class='bx bxl-github'></i></a>
-                <a href="https://codepen.io/mkrishan"  id="codePen"><i class='bx bxl-codepen'></i></a>
-                <a href="https://instagram.com/xxp3cto"  id="instagram"><i class='bx bxl-instagram' ></i></a>
-                <a href="https://linkedin.com/in/krishan mihiranga"  id="linkedIn"><i class='bx bxl-linkedin' ></i></a>
-            </div>
         </div>
     </footer>
 </body>
