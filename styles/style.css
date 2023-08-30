@@ -284,7 +284,7 @@ transition: 0.5s;
 
 /*Keyframe animations*/
 
-@keyframes slideRight {
+/* @keyframes slideRight {
     0% {
         transform: translateX(-100px);
         opacity: 0;
@@ -351,7 +351,7 @@ transition: 0.5s;
     100% {
         transform: translateY(0);
     }
-}
+}  */
 
 /* ------------------About------------------- */
 .aboutMe{
@@ -437,10 +437,6 @@ width: auto;
 position: absolute;
 top: -103px;
 transition: height 0.3s ease, transform 0.3s ease;
-}
-.card-img img:hover{
-    height: 650px;
-    transform: translateY(-50px);
 }
 .right-div>h1{
     position: relative;
@@ -575,7 +571,6 @@ transition: height 0.3s ease, transform 0.3s ease;
 
 /* ----------------skills---------------- */
 #skills{
-    overflow-x: hidden;
     height: 300px;
 }
 .skill-showcase div{
@@ -851,7 +846,7 @@ a{
     background-color: #1e2529;
     height: 350px;
     width: 600px;
-    margin: 0 0 0 300px;
+    margin: 0 0 0 160px;
     padding: 10px 10px;
 }
 .testimonial-img{
@@ -1312,4 +1307,359 @@ footer div{
 }
 #portfolio-footer{
     margin-top: 10%;
+}
+
+
+/* ---------------------------media-------------------------------------- */
+@media all and (max-width:1557px){
+    .logo{
+        font-size: 23px;
+    }
+    .navbar a{
+        font-size: 16px;
+    }
+    .home-content h3{
+        font-size: 33px;
+    }
+    .home-content h1{
+        font-size: 73px;
+    }
+    .home-content p{
+        font-size: 14px;
+    }
+    #home-image-wrapper{
+        width: 60vw;
+        height: 95vh;
+    }
+    #home-image-cyan-circle{
+        height: 120vh;
+        left: 120px;
+        top: 60px;
+        border: 100px solid #0ef;
+    }
+    .home-image>img{
+        height: 94vh;
+    }
+    .home-content>h3>div{
+        left: 210px;
+        width: 55px;
+        height: 5px;
+    }
+    .social-media a {
+        width: 38px;
+        height: 38px;
+    }
+    .btn{
+        width: 150px;
+        height: 45px;
+    }
+    .btn:hover a{
+        letter-spacing: 1.4px;
+    }
+    .center-subtopic{
+        font-size: 30px;
+    }
+    .right-div>h1{
+        font-size: 70px;
+    }
+    .tab-links{
+        font-size: 16px;
+    }
+    .right-div>p{
+        font-size: 15px;
+    }
+    #services h1{
+        font-size: 70px;
+    }
+    .services-list div{
+        font-size: 12px;
+    }
+    .services-list div i{
+        font-size: 48px;
+    }
+    .services-list div h2{
+        font-size: 28px;
+    }
+    #skills{
+        height: 280px;
+    }
+    .skill-showcase div{
+        width: 100px;
+        height: 100px;
+    }
+    .skill-showcase div:first-child{
+        background-size: cover;
+    }
+    .skill-showcase div:nth-child(2){
+        background-size: cover;
+    }
+    .skill-showcase div:nth-child(3){
+        background-size: cover;
+    }
+    .skill-showcase div:nth-child(4){
+        background-size: cover;
+    }
+    .skill-showcase div:last-child{
+        background-size: cover;
+    }
+    #projects-done{
+        height: 110px;
+    }
+    #projects-done-wrapper{
+        height: 110px;
+    }
+    .projects-count{
+        font-size: 65px;
+    }
+    .projects-heading{
+        font-size: 16px;
+    }
+    #testimonial h1{
+        font-size: 70px;
+    }
+    #testimonial-content-wrap{
+        margin: 100px 20%;
+    }
+    #testimonial-left-div p:first-child{
+        font-size: 23px;
+    }
+    #testimonial-left-div p:nth-child(2){
+        font-size: 33px;
+    }
+    #testimonial-left-div p:nth-child(3){
+        font-size: 16px;
+    }
+    #testimonial-left-div p:nth-child(4){
+        font-size: 16px;
+    }
+    #hireme-btn{
+        width: 150px;
+        height: 45px;
+    }
+    #hireme-btn i{
+        font-size: 28px;
+    }
+    .testimonial-card{
+        margin: 0 0 0 100px;
+    }
+    .star i{
+        font-size: 23px;
+    }
+    .rating{
+        font-size: 18px;
+    }
+    .t-btn{
+        font-size: 55px;
+    }
+    .a-prev{
+        right: 270%;
+    }
+    .a-next{
+        left: 270%;
+    }
+    .img-wrapper {
+        width: 430px;
+        height: 230px;
+    }
+}
+@media all and (max-width : 1629px){
+    .a-prev{
+        right: 280%;
+    }
+    .a-next{
+        left: 280%;
+    }
+}
+@media all and (max-width : 1383px){
+    .a-prev{
+        right: 240%;
+    }
+    .a-next{
+        left: 240%;
+    }
+    .home-content h3{
+        font-size: 30px;
+    }
+    .home-content h1{
+        font-size: 70px;
+    }
+    .home-content p{
+        font-size: 13px;
+    }
+    #home-image-wrapper{
+        width: 60vw;
+        height: 95vh;
+    }
+    #home-image-cyan-circle{
+        height: 110vh;
+        left: 130px;
+        top: 70px;
+        border: 90px solid #0ef;
+    }
+    .home-image>img{
+        height: 91vh;
+    }
+    .home-image{
+        bottom: -10px;
+        right: 0;
+        left: -60px;
+    }
+    .home-content>h3>div{
+        left: 210px;
+        width: 55px;
+        height: 5px;
+    }
+}
+@media all and (max-width : 1366px) {
+    .home-image>img{
+        height: 89vh;
+    }
+    .home-image{
+        bottom: -10px;
+        right: 0;
+        left: 50px;
+    }
+    #home-image-cyan-circle{
+        height: 120vh;
+        left: 140px;
+        top: 50px;
+        border: 80px solid #0ef;
+    }
+    .a-prev{
+        right: 230%;
+    }
+    .a-next{
+        left: 230%;
+    }
+    .home-content h3{
+        font-size: 29px;
+    }
+    .home-content h1{
+        font-size: 68px;
+    }
+    .home-content p{
+        font-size: 13px;
+    }
+    .home-content>h3>div{
+        left: 185px;
+        width: 50px;
+        height: 5px;
+    }
+    .social-media a {
+        width: 38px;
+        height: 38px;
+    }
+    .btn{
+        width: 140px;
+        height: 40px;
+    }
+    .center-subtopic{
+        font-size: 28px;
+    }
+    .right-div>h1{
+        font-size: 60px;
+        margin-top: -30px;
+    }
+    .tab-links{
+        font-size: 14px;
+        margin-left: 0;
+    }
+    .right-div>p{
+        font-size: 14px;
+    }
+    .card
+    {
+        margin-right: 100px;
+    }
+    .card-img{
+        width: 350px;
+        height: 450px;
+    }
+    .card-img img{
+        height: 500px;
+        top: -52px;
+    }
+    .first-line{
+        width: 75px;
+    }
+    .second-line{
+        left: 90px;
+    }
+    .tab-contents{
+        margin: -30px 0 50px 0;
+    }
+    .tab-contents ul li{
+        margin: 8px 0;
+    }
+    .right-div>p{
+        margin-top: 35px;
+    }
+    .tab-titles{
+        margin-top: -30px;
+    }
+    #services h1{
+        font-size: 68px;
+    }
+    .services-list div{
+        font-size: 12px;
+    }
+    .services-list div i{
+        font-size: 40px;
+    }
+    .services-list div h2{
+        font-size: 25px;
+    }
+    #skills{
+        height: 200px;
+    }
+    .skill-showcase div{
+        width: 90px;
+        height: 90px;
+    }
+    #testimonial-content-wrap{
+        padding: 0 10%;
+    }
+    #testimonial-left-div p:first-child{
+        font-size: 23px;
+    }
+    #testimonial-left-div p:nth-child(2){
+        font-size: 28px;
+    }
+    #testimonial-left-div p:nth-child(3){
+        font-size: 15px;
+    }
+    #testimonial-left-div p:nth-child(4){
+        font-size: 15px;
+    }
+    #hireme-btn{
+        width: 140px;
+        height: 40px;
+        font-size: 14px;
+    }
+    #hireme-btn i{
+        font-size: 25px;
+    }
+    .testimonial-card{
+        margin: 0 0 0 80px;
+    }
+    .star i{
+        font-size: 20px;
+    }
+    .rating{
+        font-size: 16px;
+    }
+    .t-btn{
+        font-size: 50px;
+    }
+    .G-box {
+        gap: 8px;
+    }
+    .img-wrapper {
+        width: 420px;
+        height: 280px;
+    }
+    .assignments-middle-circle{
+        width: 80px;
+        z-index: 2;
+    }
 }
