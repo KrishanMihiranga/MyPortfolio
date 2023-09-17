@@ -153,42 +153,64 @@
 
         <div id="services">
             <h4 class="center-subtopic">SERVICES</h4>
-            <div class="services-wraper">
-                <h1>What I Do<span class="cyan">?</span></h1>
-                <div class="services-list">
-                    <div>  
-                        <i class='bx bx-code-alt'></i>                    
-                        <h2>Web Design</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio expedita vel esse eveniet dolorum et cupiditate similique quidem fugit,
-                             repellendus error nesciunt voluptates asperiores dicta placeat nam, unde ea voluptate.
-                        </p>
-                        <span class="card-line"></span>
+            <h1>What I Do<span class="cyan">?</span></h1>
+            <div id="services-wrap">
+                <div class="serv-box">
+                    <div class="elements serv-bg"></div>
+                    <div class="elements imgBx">
+                        <img src="Assets/img/web.jpg" alt="">
+                    </div>    
+                    <div class="elements name">
+                        <h2>Web Development</h2>
                     </div>
+                    <div class="elements serv-content">
+                        <p>"Ready to make your dream website a reality? Contact me today and let's create a stunning online presence tailored to your needs."
+                        </p>
+                    </div>
+                    <div class="serv-card">
         
-                    <div>
-                        <i class='bx bx-crop' ></i>
+                    </div>
+                </div>
+    
+                <div class="serv-box serv-box2">
+                    <div class="elements serv-bg"></div>
+                    <div class="elements imgBx">
+                        <img src="Assets/img/ui.jpg" alt="">
+                    </div>    
+                    <div class="elements name">
                         <h2>UI/UX Design</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio expedita vel esse eveniet dolorum et cupiditate similique quidem fugit, 
-                            repellendus error nesciunt voluptates asperiores dicta placeat nam, unde ea voluptate.
-                        </p>
-                        <span class="card-line"></span>
                     </div>
-        
-                    <div>    
-                        <i class='bx bxl-apple'></i>                   
-                        <h2>App Design</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio expedita vel esse eveniet dolorum et cupiditate similique quidem fugit, 
-                            repellendus error nesciunt voluptates asperiores dicta placeat nam, unde ea voluptate.
+                    <div class="elements serv-content">
+                        <p>"Elevate User Experiences with Expert UI/UX Design. Contact Me Now!"
                         </p>
-                        <span class="card-line"></span>
+                    </div>
+                    <div class="serv-card">
+        
+                    </div>
+                </div>
+    
+                <div class="serv-box serv-box3">
+                    <div class="elements serv-bg"></div>
+                    <div class="elements imgBx">
+                        <img src="Assets/img/pos.png" alt="">
+                    </div>    
+                    <div class="elements name">
+                        <h2>POS Systems</h2>
+                    </div>
+                    <div class="elements serv-content">
+                        <p>"Streamline Your Business with Custom POS System Development. Get in Touch Today!"
+                        </p>
+                    </div>
+                    <div class="serv-card">
+        
                     </div>
                 </div>
             </div>
-            <h5 class="middle-quote"><span class="cyan">"</span> Building the future one line of code at a time <span class="cyan"> "</span></h5>
+            
         </div>
         <hr>
         <h4 class="center-subtopic">TOP SKILLS</h4>
-        <div class="skills_section">
+        <div class="skills_section" id="skills-sec">
             <h1>My Skills<span class="cyan">.</span></h1>
             <div class="skills_main">
                 <div class="skill_bar">
@@ -735,15 +757,15 @@
                         <h3>Useful Links</h3>
                     </div>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">about</a></li>
-                        <li><a href="#">services</a></li>
-                        <li><a href="#">portfolio</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Our Services</a></li>
-                        <li><a href="#">Expert Team</a></li>
-                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#aboutMe">about</a></li>
+                        <li><a href="#services">services</a></li>
+                        <li><a href="#portfolio">portfolio</a></li>
+                        <li><a href="#footer-section">Contact</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#skills-sec">Skills</a></li>
+                        <li><a href="#assignments">Assignments</a></li>
+                        <li><a href="#footer-section">Contact me</a></li>
                         <li><a href="#">Latest News</a></li>
                     </ul>
                 </div>
@@ -772,5 +794,25 @@
             </div>
         
         </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            VanillaTilt.init(document.querySelector(".serv-box"), {
+		    max: 15,
+		    speed: 400,
+            glare: true,
+	        });
+
+            VanillaTilt.init(document.querySelector(".serv-box2"), {
+		    max: 15,
+		    speed: 400,
+            glare: true,
+	        });
+
+            VanillaTilt.init(document.querySelector(".serv-box3"), {
+		    max: 15,
+		    speed: 400,
+            glare: true,
+	        });
+        </script>
 </body>
 </html>

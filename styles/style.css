@@ -523,66 +523,123 @@ transition: height 0.3s ease, transform 0.3s ease;
 }
 
 /* ------------------Services------------------- */
-
-#srvices{
-    position: relative;
-}
-.services-wraper{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 10%;
+#services{
+    padding:20px 15%;
 }
 #services h1{
     font-size: 75px;
-    display: inline-block;
-    padding-bottom: 10px;
+    text-align: center;
 }
-.services-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
+#services-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin-top: 10%;
+    margin-bottom: 8%;
 }
-.services-list div{
-    background: #262626;
-    padding: 40px;
-    font-size: 13px;
-    font-weight: 300;
-    border-radius: 10px;
-    transition: background 0.5s, transform 0.5s;
+.serv-box{
+    position: relative;
+    border-radius: 20px;
+    transform-style: preserve-3d;
 }
-.services-list div i{
-    font-size: 50px;
-    margin-bottom: 20px;
+.serv-box .serv-card{
+    position: relative;
+    background: rgba(255, 255, 255, 0.1);
+    width: 300px;
+    min-height: 400px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.75);
+    border-left: 1px solid rgba(255, 255, 255, 0.75);
+    border-radius: 20px;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.05);
+    transform-style: preserve-3d;
 }
-.services-list div h2{
-    font-size: 30px;
-    font-weight: 500;
-    margin-bottom: 15px;
-}
-.services-list div a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 12px;
-    margin-top: 20px;
-    display: inline-block;
-}
-.services-list div:hover{
-    background-color: #0ef;
-    color: #141518;
-    transform: translateY(-10px);
-}
-.card-line{
-    width: 50px;
-    height: 5px;
-    margin-top: 10px;
-    background-color: #0ef;
+.elements{
     position: absolute;
-    border: 1px solid #141518;
+    top: 50px;
+    left: -30px;
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateZ(80px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.75);
+    border-left: 1px solid rgba(255, 255, 255, 0.75);
+    border-radius: 10px;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.05);
+
 }
-#services h5{
-    margin-bottom: 80px;
+.elements.serv-bg::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url(../Assets/img/left-quote.png);
+    background-size: 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+}
+
+.elements.imgBx{
+    top: 0;
+    left: initial;
+    right: 60px;
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+    transform: translateZ(120px);
+}
+.elements.imgBx img{
+    position: absolute;
+    width: calc(100% - 20px);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.75);
+    border-left: 1px solid rgba(255, 255, 255, 0.75);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.05);
+   
+}
+
+.elements.name{
+    top: 145px;
+    left: initial;
+    right: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: right;
+    transform: translateZ(180px);
+    background: transparent;
+    backdrop-filter: blur(0);
+    border: none;
+    box-shadow: none;
+    color: #fff;
+
+}
+
+.elements.serv-content{
+    top: initial;
+    left: initial;
+    bottom: 0;
+    right: -20px;
+    width: 85%;
+    min-height: 200px;
+    padding: 10px;
+    transform: translateZ(180px);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.elements.serv-content p{
+    position: relative;
+    color: #fff;
+    font-size: 0.85em;
+    
 }
 
 /* ----------------skills---------------- */
