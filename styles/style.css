@@ -300,7 +300,7 @@ transition: 0.5s;
 
 /*Keyframe animations*/
 
-/* @keyframes slideRight {
+@keyframes slideRight {
     0% {
         transform: translateX(-100px);
         opacity: 0;
@@ -367,7 +367,7 @@ transition: 0.5s;
     100% {
         transform: translateY(0);
     }
-}  */
+}  
 
 /* ------------------About------------------- */
 .aboutMe{
@@ -511,6 +511,7 @@ transition: height 0.3s ease, transform 0.3s ease;
 }
 .tab-contents{
     display: none;
+    min-height: 400px;
 }
 .tab-contents.active-tab{
     display: block;
