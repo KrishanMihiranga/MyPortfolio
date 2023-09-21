@@ -1800,6 +1800,54 @@ a{
         width: 80px;
         z-index: 2;
     }
+    .serv-box .serv-card{
+        width: 270px;
+        height: 300px;
+    }
+    .elements{
+        width: 80px;
+        height: 80px;
+    }
+    .elements.imgBx{
+        width: 90px;
+        height: 90px;
+    }
+    .elements.serv-content{
+        width: 70%;
+        right: 0;
+    }
+    .elements.serv-content p{
+        font-size: 0.75em;
+    }
+    #services{
+        padding: 10%;
+    }
+    .sc-container{
+        gap: normal;
+    }
+    
+    #footer-content{
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+    }
+    #footer-bottom-wrapper{
+        justify-content: space-between;
+        position: relative;
+        left: -50px;
+    }
+    #footer-bottom-center{
+        margin-right: 5%;
+        min-width: 200px;
+    }
+    #footer-bottom-center ul li{
+        width: fit-content;
+        gap: 10px;
+    }
+    #footer-bottom-right{
+        position: relative;
+    }
+
 }
 @media all and (max-width: 992px){
     .header{
