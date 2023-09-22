@@ -19,7 +19,9 @@
     <div id="scroll">
         <a href="#" id="scroll-value">&#x1F815;</a>
     </div>
-
+    <div id="cursor-dot" data-cursor-dot></div>
+    <div id="cursor-outline" data-cursor-outline></div>
+    <div id="cursor-blur"></div>
     <header class="header">
         <a href="#" class="logo">Portfolio<span class="cyan">.</span></a>
 
@@ -805,6 +807,28 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         
         <script>
+            var cursorDot = document.querySelector("[data-cursor-dot]")
+            var cursorOutline = document.querySelector("[data-cursor-outline]")
+            var blur = document.querySelector("#cursor-blur")
+            window.addEventListener("mousemove", function(e){
+                const posX = e.clientX;
+                const posY = e.clientY;
+
+                cursorDot.style.left = `${posX}px`;
+                cursorDot.style.top = `${posY}px`;
+                // blur.style.left = `${posX - 200}px`;
+                // blur.style.top = `${posY - 200}px`;
+                cursorOutline.animate({
+                    left: `${posX}px`,
+                    top: `${posY}px`
+                }, {duration:500, fill: "forwards"});
+                blur.animate({
+                    left: `${posX - 200}px`,
+                    top: `${posY - 200}px`
+                }, {duration:500, fill: "forwards"});
+            })
+            
+        
             VanillaTilt.init(document.querySelector(".serv-box"), {
 		    max: 15,
 		    speed: 400,
