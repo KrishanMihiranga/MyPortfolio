@@ -2029,16 +2029,9 @@ a{
         position: relative;
         left: -50px;
     }
-    #footer-bottom-center{
-        margin-right: 5%;
-        min-width: 200px;
-    }
-    #footer-bottom-center ul li{
-        width: fit-content;
-        gap: 10px;
-    }
     #footer-bottom-right{
         position: relative;
+        left: 5%;
     }
 
 }
@@ -2159,9 +2152,6 @@ a{
     .serv-box3{
         margin-top: 150px;
     }
-    #gallery{
-        width: 200px;
-    }
     #testimonial-content-wrap{
         display: flex;
         flex-direction: column;
@@ -2252,25 +2242,8 @@ a{
         top: 200px;
     }
     #footer-bottom-center {
-        display: flex;
-        flex-wrap: wrap;
         position: relative;
-        bottom: 30px;
         left: 20px;
-    }
-
-    ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-
-    li {
-        flex: 1;
-    }
-
-    li + li {
-        margin-right: 20px;
     }
     #footer-bottom-right{
         position: relative;
@@ -2291,5 +2264,302 @@ a{
         bottom: 5px;
         padding: 13px 20px;
         top: 0;
+    }
+    .projects-count{
+        font-size: 50px;
+    }
+    .projects-heading{
+        font-size: 15px;
+    }
+    .assignments-card-bg{
+        width: 450px;
+        height: 200px;
+    }
+    .a-prev{
+        right: 230px;
+    }
+    .a-next{
+        left: 230px;
+    }
+    .G-box {
+        grid-template-columns: repeat(2, 1fr);
+    }   
+    .img-wrapper {
+        width: 330px;
+        height: 200px;
+        overflow: hidden;
+        position: relative;
+    }
+    .img-wrapper:nth-child(3){
+        grid-column: 1 / 2;
+        grid-row: 2 / 4;
+        height: auto;
+    }
+    .img-wrapper:nth-child(6){
+        grid-column: 2 / 3;
+        grid-row: 4 /6;
+        height: auto;
+    }
+}
+@media all and (max-width: 425px){
+   .testimonial-card{
+    width: 250px;
+   }
+   .assignments-card-bg{
+    width: 300px;
+   }
+   .a-prev{
+    right: 150px;
+   }
+   .a-next{
+    left: 150px;
+   }
+   #scroll{
+    right: 200px;
+   }
+   #testimonial-left-div{
+    width: 300px;
+   }
+   #testimonial-left-div>p:nth-child(2){
+    font-size: 15px;
+   }
+   .home-content h3:first-child{
+    font-size: 20px;
+   }
+   #role-wrapper{
+    font-size: 21px;
+    margin: 5px 5px 5px 0;
+   }
+   .home-content h1{
+    font-size: 40px;
+   }
+   .home-content div:first-child{
+    width: 35px;
+    left: 130px;
+   }
+   .home-content p{
+    font-size: 12px;
+    text-align: left;
+    margin-top: 10px;
+   }
+   .home-content{
+    top: 150px;
+   }
+   .social-media a{
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    font-size: 20px;
+    margin: 15px 10px 15px 0;
+   }
+   .btn{
+    width: 130px;
+    font-size: 15px;
+   }
+   #home-image-wrapper{
+    margin: 0;
+    width: 420px;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 380px;
+    right: 3px;
+   }
+   #home-image-cyan-circle{
+    width: 350px;
+    height: 350px;
+    position: relative;
+    top: 80px;
+    margin: 0;
+    border: 30px solid #0ef;
+   }
+   .home-image img{
+    height: 330px;
+    width: auto;
+   }
+   #home{
+    padding: 0 30px;
+    min-height: 728px;
+   }
+   .logo{
+    font-size: 18px;
+    position: relative;
+    left: 10px;
+   }
+   .center-subtopic{
+    font-size: 20px;
+    letter-spacing: 5px;
+   }
+   .icons{
+    font-size: 2.2rem;
+   }
+   .card-img img{
+    height: 300px;
+    width: 300px;
+    right: 5px;
+   }
+   .card{
+    width: 300px;
+    height: 350px;
+   }
+   .right-div h1{
+    font-size: 40px;
+   }
+   .first-line{
+    width: 50px;
+   }
+   .second-line{
+    left: 65px;
+   }
+   .right-div p{
+    font-size: 13px;
+    text-align: center;
+   }
+   .right-div{
+    width: 100%;
+   }
+   .tab-links{
+    margin-right: 8%;
+    margin-top: 80px;
+   }
+   .tab-contents li{
+    font-size: 12px;
+   }
+   .tab-contents{
+    min-height: 450px;
+   }
+   #services h1{
+    font-size: 40px;
+   }
+   .skills_section h1{
+    font-size: 40px;
+   }
+   .skills_section{
+    margin: 0 0 50px 0;
+   }
+   .skills_main{
+    margin-top: 20%;
+   }
+   .sc-container{
+    position: relative;
+    margin-top: 10%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    }
+    .s-card{
+        max-width: 200px;
+        max-height: 200px;
+    }
+    #portfolio h1{
+        font-size: 40px;
+    }
+    #portfolio .tab-titles{
+        position: relative;
+        left: -25px;
+    }
+    .middle-quote{
+        font-size: 15px;
+    }
+    .projects-count{
+        font-size: 35px;
+    }
+    .projects-heading{
+        font-size: 15px;
+    }
+    #projects-done-wrapper{
+        display: flex;
+        gap: 30px;
+        justify-content: space-between;
+    }
+    #testimonial h1{
+        font-size: 40px;
+    }
+    #testimonial-left-div{
+        position: relative;
+        top: -50px;
+    }
+    .testimonial-card{
+        display: none;
+    }
+    #assignments-topics h1{
+        font-size: 40px;
+    }
+    #footer-content h4{
+        font-size: 15px;
+    }
+    #footer-content i{
+        font-size: 30px;
+    }
+    #footer-content span{
+        font-size: 12px;
+    }
+    #fl-txt{
+        left: 20px;
+        top: 0;
+    }
+    #footer-socials{
+        left: 20px;
+        right: 0;
+        top: 10px;
+        bottom: 0;
+    }
+    #footer-socials span{
+        font-size: 20px;
+        min-width: 200px;
+    }
+    #footer-bottom-left .social-media{
+        left: 20px;
+        right: 0;
+        top: 20px;
+        bottom: 0;
+    }
+    .footer-center-heading{
+        margin-top: 30px;
+    }
+    .subscribe-form input{
+        width: 295px;
+    }
+    .subscribe-form textarea{
+        width: 295px;
+    }
+    .subscribe-form button{
+        right: -215px;
+    }
+    .copyright-text p{
+        font-size: 12px;
+    }
+    #gallery{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .G-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }  
+    .img-wrapper {
+        width: 330px;
+        height: 200px;
+        overflow: hidden;
+        position: relative;
+    }
+    .img-wrapper:nth-child(3){
+        grid-column: auto;
+        grid-row: auto;
+        height: auto;
+    }
+    .img-wrapper:nth-child(6){
+        grid-column: auto;
+        grid-row: auto;
+        height: auto;
+    }
+    .work-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
