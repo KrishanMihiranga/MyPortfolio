@@ -13,12 +13,11 @@
 
     <link rel="stylesheet" href="styles/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
 </head>
 
 <body>
-    <div id="scroll">
-        <a href="#" id="scroll-value">&#x1F815;</a>
-    </div>
+    
     <div id="cursor-dot" data-cursor-dot></div>
     <div id="cursor-outline" data-cursor-outline></div>
     <div id="cursor-blur"></div>
@@ -40,40 +39,54 @@
             <a href="#footer-section"style="--i:4;">Contact</a>
         </nav>
     </header>
+    
 
-        <div id="home">
-            <div class="home-content">
-                <h3>Hello, It's Me <div></div></h3>
-                <h1>Kishan Mihiranga</h1>
-                <h3 id="role-wrapper">And I'm a <span id="role" class="multiple-text"></span></h3>
-                <p>Enthusiastic student mastering front-end & back-end web development, fusing responsive <br>
-                    design with strong UI/UX expertise. Committed to open-source contribution<span class="cyan">.</span></p>
-
-                <div class="social-media">
-                    <a href="https://github.com/KrishanMihiranga"  target="_blank" class="git"><i class='bx bxl-github'></i></a>
-                    <a href="https://codepen.io/mkrishan" target="_blank" class="codePen"><i class='bx bxl-codepen'></i></a>
-                    <a href="https://instagram.com/xxp3cto" target="_blank" class="instagram"><i class='bx bxl-instagram' ></i></a>
-                    <a href="https://linkedin.com/in/krishan mihiranga" target="_blank" class="linkedIn"><i class='bx bxl-linkedin' ></i></a>
+    <div id="home">
+                <div class="home-content" >
+                    <h3>Hello, It's Me <div></div></h3>
+                    <h1>Kishan Mihiranga</h1>
+                    <h3 id="role-wrapper">And I'm a <span id="role" class="multiple-text"></span></h3>
+                    <p>Enthusiastic student mastering front-end & back-end web development, fusing responsive <br>
+                        design with strong UI/UX expertise. Committed to open-source contribution<span class="cyan">.</span></p>
+    
+                    <div class="social-media">
+                        <a href="https://github.com/KrishanMihiranga"  target="_blank" class="git"><i class='bx bxl-github'></i></a>
+                        <a href="https://codepen.io/mkrishan" target="_blank" class="codePen"><i class='bx bxl-codepen'></i></a>
+                        <a href="https://instagram.com/xxp3cto" target="_blank" class="instagram"><i class='bx bxl-instagram' ></i></a>
+                        <a href="https://linkedin.com/in/krishan mihiranga" target="_blank" class="linkedIn"><i class='bx bxl-linkedin' ></i></a>
+                    </div>
+                    <div class="btn">
+                        <a href="Assets/downloads/test.txt" download>Download CV</a>
+                    </div>
+                        
                 </div>
-                <div class="btn">
-                    <a href="Assets/downloads/test.txt" download>Download CV</a>
+    
+                <div id="home-image-wrapper">
+                    <div id="home-image-cyan-circle">
+                    </div>
+                    <div class="home-image">
+                        <img src="Assets/img/hero.png" width="500" alt="Hero Image">
+                    </div>
                 </div>
-                    
-            </div>
-
-            <div id="home-image-wrapper">
-                <div id="home-image-cyan-circle">
+                <div class="cubes">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
                 </div>
-                <div class="home-image">
-                    <img src="Assets/img/hero.png" width="500" alt="Hero Image">
-                </div>
-            </div>
-            
-
-        </div>
+    
+    </div>
+        
         <hr>
         
         <div id="aboutMe">
+            
             <h4 class="center-subtopic">BIOGRAPHY</h4>
 
             <div class="div-wrapper">
@@ -116,7 +129,6 @@
                             <li><span>Web-development</span><br>Html / css / JavaScript</li>
                             <li><span>Designing</span><br>Photoshop / illustrator / Lightroom / Ae</li>
                             <li><span>Editing</span><br>Blender / Premeire-Pro / Flash / Figma / canva</li>
-                            <li><span>Game-dev</span><br>unreal-engine</li>
                         </ul>
                     </div>
                     <div class="tab-contents " id="experience">
@@ -156,67 +168,87 @@
             </div>
 
             <h5 class="middle-quote"><span class="cyan">"</span> Believe. Archieve. Inspire. <span class="cyan">"</span></h5>
+            
         </div>
         <hr>
 
-        <div id="services">
-            <h4 class="center-subtopic">SERVICES</h4>
-            <h1>What I Do<span class="cyan">?</span></h1>
-            <div id="services-wrap">
-                <div class="serv-box">
-                    <div class="elements serv-bg"></div>
-                    <div class="elements imgBx">
-                        <img src="Assets/img/web.jpg" alt="">
-                    </div>    
-                    <div class="elements name">
-                        <h2>Web Development</h2>
+        <div>
+            <div id="services">
+                <h4 class="center-subtopic">SERVICES</h4>
+                <h1>What I Do<span class="cyan">?</span></h1>
+                <div id="services-wrap">
+                    <div class="serv-box">
+                        <div class="elements serv-bg"></div>
+                        <div class="elements imgBx">
+                            <img src="Assets/img/web.jpg" alt="">
+                        </div>    
+                        <div class="elements name">
+                            <h2>Web Development</h2>
+                        </div>
+                        <div class="elements serv-content">
+                            <p>"Ready to make your dream website a reality? Contact me today and let's create a stunning online presence tailored to your needs."
+                            </p>
+                        </div>
+                        <div class="serv-card">
+            
+                        </div>
                     </div>
-                    <div class="elements serv-content">
-                        <p>"Ready to make your dream website a reality? Contact me today and let's create a stunning online presence tailored to your needs."
-                        </p>
-                    </div>
-                    <div class="serv-card">
         
+                    <div class="serv-box serv-box2">
+                        <div class="elements serv-bg"></div>
+                        <div class="elements imgBx">
+                            <img src="Assets/img/ui.jpg" alt="">
+                        </div>    
+                        <div class="elements name">
+                            <h2>UI/UX Design</h2>
+                        </div>
+                        <div class="elements serv-content">
+                            <p>"Elevate User Experiences with Expert UI/UX Design. Contact Me Now!"
+                            </p>
+                        </div>
+                        <div class="serv-card">
+            
+                        </div>
+                    </div>
+        
+                    <div class="serv-box serv-box3">
+                        <div class="elements serv-bg"></div>
+                        <div class="elements imgBx">
+                            <img src="Assets/img/pos.png" alt="">
+                        </div>    
+                        <div class="elements name">
+                            <h2>POS Systems</h2>
+                        </div>
+                        <div class="elements serv-content">
+                            <p>"Streamline Your Business with Custom POS System Development. Get in Touch Today!"
+                            </p>
+                        </div>
+                        <div class="serv-card">
+            
+                        </div>
                     </div>
                 </div>
-    
-                <div class="serv-box serv-box2">
-                    <div class="elements serv-bg"></div>
-                    <div class="elements imgBx">
-                        <img src="Assets/img/ui.jpg" alt="">
-                    </div>    
-                    <div class="elements name">
-                        <h2>UI/UX Design</h2>
-                    </div>
-                    <div class="elements serv-content">
-                        <p>"Elevate User Experiences with Expert UI/UX Design. Contact Me Now!"
-                        </p>
-                    </div>
-                    <div class="serv-card">
-        
-                    </div>
-                </div>
-    
-                <div class="serv-box serv-box3">
-                    <div class="elements serv-bg"></div>
-                    <div class="elements imgBx">
-                        <img src="Assets/img/pos.png" alt="">
-                    </div>    
-                    <div class="elements name">
-                        <h2>POS Systems</h2>
-                    </div>
-                    <div class="elements serv-content">
-                        <p>"Streamline Your Business with Custom POS System Development. Get in Touch Today!"
-                        </p>
-                    </div>
-                    <div class="serv-card">
-        
-                    </div>
+                <div class="cubes">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
                 </div>
             </div>
             
         </div>
+        
         <hr>
+        
+        <div class="particle-wrapper">
+            <div id="particles-js"></div>
+        </div>
         <h4 class="center-subtopic">TOP SKILLS</h4>
         <div class="skills_section" id="skills-sec">
             <h1>My Skills<span class="cyan">.</span></h1>
@@ -579,115 +611,211 @@
                 <h5 class="middle-quote topmargin-quote"><span class="cyan">"</span> Turning ideas into reality,one algorithm at a time. <span class="cyan">"</span></h5>                
             </div>
         </div>
-        <div id="projects-done">
-            <div id="projects-done-wrapper">
-                <span class="li">
-                    <p class="projects-count">
-                        20
-                    </p>
-                    <p class="projects-heading">
-                        Projects Done
-                    </p>
-                </span>
-                <span class="li">
-                    <p class="projects-count">
-                        02
-                    </p>
-                    <p class="projects-heading">
-                        Happy Clients
-                    </p>
-                </span>
-                <span class="li">
-                    <p class="projects-count">
-                        01
-                    </p>
-                    <p class="projects-heading">
-                        Awards Win
-                    </p>
-                </span>
-                <span class="li">
-                    <p class="projects-count">
-                        01
-                    </p>
-                    <p class="projects-heading">
-                        Years of Experience
-                    </p>
-                </span>
-            </div>
-        </div>
+        
 
-        <div id="testimonial">
-            <div id="testimonial-topic">
-                <h4 class="center-subtopic">TESTIMONIAL</h4>
-                <h1>Real-World Success Stories<span class="cyan">.</span></h1>
+        <div class="bg-3">
+            <div id="projects-done">
+                <div id="projects-done-wrapper">
+                    <span class="li">
+                        <p class="projects-count">
+                            20
+                        </p>
+                        <p class="projects-heading">
+                            Projects Done
+                        </p>
+                    </span>
+                    <span class="li">
+                        <p class="projects-count">
+                            02
+                        </p>
+                        <p class="projects-heading">
+                            Happy Clients
+                        </p>
+                    </span>
+                    <span class="li">
+                        <p class="projects-count">
+                            01
+                        </p>
+                        <p class="projects-heading">
+                            Awards Win
+                        </p>
+                    </span>
+                    <span class="li">
+                        <p class="projects-count">
+                            01
+                        </p>
+                        <p class="projects-heading">
+                            Years of Experience
+                        </p>
+                    </span>
+                </div>
             </div>
-
-            <div id="testimonial-content-wrap">
-                <div id="testimonial-left-div">
-                    <p>What Others Say?</p>
-                    <p>Reavealing the impact of My Services.</p>
-                    <p>Discover the true impact of my services through valuable <br>client feedback. Hear directly from satisfied clients and gain <br>insights into the quality and value I provide.</p>
-                    <p>
-                        Explore testimonials that highlight successful <br>collaborations, exceptional outcomes, and the overall <br>satisfaction of clients. Let their words showcase the <br> effectiveness and excellence of my work.
-                    </p>
-                    <div >
-                        <a href="#" id="hireme-btn">
-                            <i class='bx bxs-briefcase-alt-2'></i>
-                            <span>Hire Me Now</span>
-                        </a>
-                    </div>
+            <div id="testimonial">
+                <div id="testimonial-topic">
+                    <h4 class="center-subtopic">TESTIMONIAL</h4>
+                    <h1>Real-World Success Stories<span class="cyan">.</span></h1>
                 </div>
     
-                <div id="testimonial-right-div">
-                    
-                    <div class="testimonial-card">
-                        <div class="t-top">
-                            <div class="testimonial-img" id="t-img1"></div>
-                            <div class="t-midlle-topics">
-                                <p>Will Smith</p>
-                                <p>ABC Company</p>
-                            </div>
-                            <i class='bx bxs-quote-right'></i>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci ad asperiores repellendus, amet nemo cupiditate expedita officia doloremque voluptates libero, 
-                            quisquam voluptatem magnam ipsam dolorem dolorum at reiciendis, laborum recusandae.
+                <div id="testimonial-content-wrap">
+                    <div id="testimonial-left-div">
+                        <p>What Others Say?</p>
+                        <p>Reavealing the impact of My Services.</p>
+                        <p>Discover the true impact of my services through valuable <br>client feedback. Hear directly from satisfied clients and gain <br>insights into the quality and value I provide.</p>
+                        <p>
+                            Explore testimonials that highlight successful <br>collaborations, exceptional outcomes, and the overall <br>satisfaction of clients. Let their words showcase the <br> effectiveness and excellence of my work.
                         </p>
-                        <div class="star">
-                            <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
-                            <div class="rating">
-                                <p>4 / 5</p>
-                            </div>
+                        <div >
+                            <a href="#" id="hireme-btn">
+                                <i class='bx bxs-briefcase-alt-2'></i>
+                                <span>Hire Me Now</span>
+                            </a>
                         </div>
-                        <div class="t-nav">
-                            <span class="t-btn t-prev">&larr;</span>
-                            <span class="t-btn t-next">&rarr;</span>
+                    </div>
+        
+                    <div id="testimonial-right-div">
+                        <div id="t-card">
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+    
+                                    <div class="swiper-slide">
+                                        <div class="testimonial-card">
+                                            <div class="t-top">
+                                                <div class="testimonial-img" id="t-img1"></div>
+                                                <div class="t-midlle-topics">
+                                                    <p>Will Smith</p>
+                                                    <p>ABC Company</p>
+                                                </div>
+                                                <i class='bx bxs-quote-right'></i>
+                                            </div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci ad asperiores repellendus, amet nemo cupiditate expedita officia doloremque voluptates libero, 
+                                                quisquam voluptatem magnam ipsam dolorem dolorum at reiciendis, laborum recusandae.
+                                            </p>
+                                            <div class="star">
+                                                <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                                                <div class="rating">
+                                                    <p>4 / 5</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                
+                                      </div>
+    
+                                  <div class="swiper-slide">
+                                    <div class="testimonial-card">
+                                        <div class="t-top">
+                                            <div class="testimonial-img" id="t-img1"></div>
+                                            <div class="t-midlle-topics">
+                                                <p>Will Smith</p>
+                                                <p>ABC Company</p>
+                                            </div>
+                                            <i class='bx bxs-quote-right'></i>
+                                        </div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci ad asperiores repellendus, amet nemo cupiditate expedita officia doloremque voluptates libero, 
+                                            quisquam voluptatem magnam ipsam dolorem dolorum at reiciendis, laborum recusandae.
+                                        </p>
+                                        <div class="star">
+                                            <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                                            <div class="rating">
+                                                <p>4 / 5</p>
+                                            </div>
+                                        </div>
+                                    </div>
+            
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <div class="testimonial-card">
+                                        <div class="t-top">
+                                            <div class="testimonial-img" id="t-img1"></div>
+                                            <div class="t-midlle-topics">
+                                                <p>Will Smith</p>
+                                                <p>ABC Company</p>
+                                            </div>
+                                            <i class='bx bxs-quote-right'></i>
+                                        </div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci ad asperiores repellendus, amet nemo cupiditate expedita officia doloremque voluptates libero, 
+                                            quisquam voluptatem magnam ipsam dolorem dolorum at reiciendis, laborum recusandae.
+                                        </p>
+                                        <div class="star">
+                                            <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                                            <div class="rating">
+                                                <p>4 / 5</p>
+                                            </div>
+                                        </div>
+                                    </div>
+            
+                                  </div>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                              </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <hr>
         </div>
-        <hr>
-        <div id="assignments">
-            <div id="assignments-topics">
-                <h4 class="center-subtopic">TASK DELIVERABLES</h4>
-                <h1>Assignments<span class="cyan">.</span></h1>
-            </div>
         
-            <div class="assignments-card-bg">
-                <div class="assignments-middle-circle"></div>
-                <div class="assignments-card-content-wrapper">
-                    <span class="assignments-card-footer-topic">Assignment 01</span>
-                    <span class="assignments-card-footer-content">Html Assignment 01 | Practice Assignment</span>
-                    <a href="#">See More</a>
+        <div class="bg-4">
+            <div id="assignments">
+                <div id="assignments-topics">
+                    <h4 class="center-subtopic">TASK DELIVERABLES</h4>
+                    <h1>Assignments<span class="cyan">.</span></h1>
                 </div>
-                <div class="a-nav">
-                    <span class="a-btn a-prev">&lt;</span>
-                    <span class="a-btn a-next">&gt;</span>
-                </div>
-            </div>
             
-            <h5 class="middle-quote topmargin-quote"><span class="cyan">"</span> Embracing challenges, conquering assignments, and evolving as a software engineering trailblazer. <span class="cyan">"</span></h5>
+                <div id="a-card">
+                    <div class="swiper mySwiper" id="a-swiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                
+                            <div class="assignments-card-bg">
+                                <div class="assignments-middle-circle"></div>
+                                <div class="assignments-card-content-wrapper">
+                                    <span class="assignments-card-footer-topic">Assignment 01</span>
+                                    <span class="assignments-card-footer-content">Html Assignment 01 | Practice Assignment</span>
+                                    <a href="#">github <i class='bx bx-link-external'></i></a>
+                                </div>
+                            </div>
+                
+                          </div>
+                         
+                          <div class="swiper-slide">
+                            
+                            <div class="assignments-card-bg">
+                                <div class="assignments-middle-circle"></div>
+                                <div class="assignments-card-content-wrapper">
+                                    <span class="assignments-card-footer-topic">Assignment 01</span>
+                                    <span class="assignments-card-footer-content">Html Assignment 01 | Practice Assignment</span>
+                                    <a href="#">github <i class='bx bx-link-external'></i></a>
+                                </div>
+                            </div>
+                
+                          </div>
+                         
+                          <div class="swiper-slide">
+                            
+                            <div class="assignments-card-bg">
+                                <div class="assignments-middle-circle"></div>
+                                <div class="assignments-card-content-wrapper">
+                                    <span class="assignments-card-footer-topic">Assignment 01</span>
+                                    <span class="assignments-card-footer-content">Html Assignment 01 | Practice Assignment</span>
+                                    <a href="#">github <i class='bx bx-link-external'></i></a>
+                                </div>
+                            </div>
+                
+                          </div>
+                         
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                </div>
+                <h5 class="middle-quote topmargin-quote"><span class="cyan">"</span> Embracing challenges, conquering assignments, and evolving as a software engineering trailblazer. <span class="cyan">"</span></h5>
+    
+    
+            </div>
         </div>
+        
         <hr>
         <div id="gallery">
                 <div id="gallery-topic">
@@ -711,6 +839,18 @@
                 </div>
                 <div class="btn">
                     <a href="Assets/test.txt" download>See more</a>
+                </div>
+                <div class="cubes">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
                 </div>
         </div>
         <hr>
@@ -802,10 +942,13 @@
             </div>
         
         </div>
+        
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script type="text/Javascript" src="Assets/lib/particles.js"></script>
+        <script type="text/Javascript" src="Assets/lib/app.js"></script>
         <script>
             var cursorDot = document.querySelector("[data-cursor-dot]")
             var cursorOutline = document.querySelector("[data-cursor-outline]")
@@ -868,6 +1011,12 @@
              event.currentTarget.classList.add("active-link");
              document.getElementById(tabname).classList.add("active-tab");
              }
+            var swiper = new Swiper(".mySwiper", {
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
         </script>
 </body>
 </html>
