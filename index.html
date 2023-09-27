@@ -1039,8 +1039,13 @@
                 },
             });
             var loader = document.getElementById('preloader');
-                    window.addEventListener("load", function(){
+
+
+            var defaultLoadingTime = 2000;
+            window.addEventListener("load", function(){
+                setTimeout(function() {
                     loader.style.display = "none";
+                }, defaultLoadingTime);
             });
         </script>
 </body>
