@@ -441,7 +441,8 @@ html {
     position: relative;
 }
 #particles-js{
-    height: 1080px;
+    height: 930px;
+    width: 100vw;
 }
 .particle-wrapper{
     height: 1px;
@@ -453,7 +454,6 @@ html {
     height: 950px;
     right: 0;
     bottom: 0;
-    border: 1px solid red;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2021,7 +2021,9 @@ a{
     .cubes{
         height: 900px;
     }
-   
+    #particles-js{
+        height: 900px;
+    }
     #home{
         max-height: 900px;
         margin-bottom: 0;
@@ -2145,6 +2147,10 @@ a{
         left: 180px;
         top: 100px;
         border: 100px solid #0ef;
+    }
+    
+    #particles-js{
+        height: 850px;
     }
     #home{
         max-height: 800px;
@@ -2437,6 +2443,10 @@ a{
     #skills-sec{
         height: 1080px;
     }
+    
+    #particles-js{
+        height: 1090px;
+    }
     #home-image-wrapper{
         height: 740px;
         top: -50px;
@@ -2457,6 +2467,19 @@ a{
     }
 }
 @media all and (max-width: 1256px){
+    #services-wrap{
+        display: flex;
+        flex-direction: column;
+    }
+    .serv-box{
+        margin-top: 100px;
+    }
+    .serv-box2{
+        margin-top: 150px;
+    }
+    .serv-box3{
+        margin-top: 150px;
+    }
     .img-wrapper{
         width: 330px;
         height: 190px;
@@ -2658,20 +2681,6 @@ a{
         height: 100px;
         width: auto;
     }
-    
-    #services-wrap{
-        display: flex;
-        flex-direction: column;
-    }
-    .serv-box{
-        margin-top: 100px;
-    }
-    .serv-box2{
-        margin-top: 150px;
-    }
-    .serv-box3{
-        margin-top: 150px;
-    }
     #footer-content{
         display: flex;
         flex-direction: column;
@@ -2812,6 +2821,9 @@ a{
         flex-direction: column;
     }
    
+    #particles-js{
+        height: 1400px;
+    }
     #services-wrap{
         display: flex;
         flex-direction: column;
@@ -3064,8 +3076,17 @@ a{
     #home-image-cyan-circle{
       height: 510px;
     }
+    .right-div{
+        width: 450px;
+    }
+    .tab-titles p{
+        margin: 80px 30px 70px 0 ;
+    }
 }
 @media all and (max-width: 519px){
+    #particles-js{
+        height: 1590px;
+    }
     #role-wrapper{
         font-size: 25px;
     }
@@ -3092,6 +3113,12 @@ a{
     }
     #home-image-cyan-circle{
       height: 470px;
+    }
+    #skills-sec{
+        margin-bottom: 0;
+    }
+    #s-hr{
+        margin-top: 0;
     }
 }
 @media all and (max-width: 480px){
@@ -3260,8 +3287,8 @@ a{
    }
    .card-img img{
     height: 300px;
-    width: 300px;
-    right: 5px;
+    left: -80px;
+    top: 46px;
    }
    .card{
     width: 300px;
@@ -3372,6 +3399,9 @@ a{
 @media all and (max-width: 420px){
     #home-image-wrapper{
         width: 400px;
+    }
+    .tab-titles p{
+        margin-right: 20px;
     }
 }
 @media all and (max-width: 415px){
@@ -3488,6 +3518,13 @@ a{
     }
 }
 @media all and (max-width: 366px){
+    .card{
+        left: -20px;
+    }
+    
+    .tab-titles p{
+        margin-right: 15px;
+    }
     #testimonial-left-div{
         width: 270px;
         padding: 0;
@@ -3538,6 +3575,16 @@ a{
     }
 }
 @media all and (max-width: 333px){
+    .card-img img{
+        height: 300px;
+        top: 0;
+        left: -105px;
+        top: 18px;
+    }
+    
+    .tab-titles p{
+        margin-right: 11px;
+    }
     #testimonial-left-div{
         padding: 0 30px 0 0; 
         width: fit-content;
