@@ -499,7 +499,7 @@ html {
     height: 940px;
     width: auto;
     animation: heroSlideLeft 2s ease forwards, floatImage 4s ease-in-out infinite;
-    animation-delay: 0s, 2s;
+    animation-delay: 0s, 5s;
 }
 .home-content{
     position: relative;  

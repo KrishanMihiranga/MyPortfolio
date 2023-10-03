@@ -69,13 +69,12 @@
 
             var loader = document.getElementById('preloader');
 
-
-            var defaultLoadingTime = 2000;
             window.addEventListener("load", function(){
                 setTimeout(function() {
                     loader.style.display = "none";
-                }, defaultLoadingTime);
+                }, 3000); 
             });
+            
 
 
     // window.addEventListener('scroll', reveal);
