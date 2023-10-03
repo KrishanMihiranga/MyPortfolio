@@ -359,6 +359,27 @@ html {
     display: block;
     height: 28px;
 }
+/* .reveal{
+    position: relative;
+    transform: translateY(250px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+.reveal.r-active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.reveal-left {
+    position: relative;
+    transform: translateX(-250px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.reveal-left.r-left-active {
+    transform: translateX(0px);
+    opacity: 1;
+} */
 
 /* ------------------Header------------------- */
 .header{
@@ -439,14 +460,6 @@ html {
     justify-content: space-between;
     padding: 2% 10%;
     position: relative;
-}
-#particles-js{
-    height: 930px;
-    width: 100vw;
-}
-.particle-wrapper{
-    height: 1px;
-    position: absolute;
 }
 #home-image-wrapper{
     position: absolute;
@@ -678,6 +691,7 @@ transition: 0.5s;
 .aboutMe{
     position: relative;
     z-index: 10;
+    overflow-x: hidden;
 }
 .bg{
     background: url("../Assets/img/bg-2.jpg")center center no-repeat;
@@ -839,7 +853,9 @@ color: white;
     line-height: 25px;
     font-weight: 400;
 }
-
+.right-div{
+    overflow-x: hidden;
+}
 /* ------------------Services------------------- */
 #services{
     padding:20px 15%;
@@ -1691,6 +1707,7 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
 }
 
 .G-box {
@@ -1978,8 +1995,6 @@ a{
 #portfolio-footer{
     margin-top: 10%;
 }
-
-
 /* ---------------------------media-------------------------------------- */
 @media all and (max-width : 1629px){
     .a-prev{
@@ -2019,9 +2034,6 @@ a{
         height: 900px;
     }
     .cubes{
-        height: 900px;
-    }
-    #particles-js{
         height: 900px;
     }
     #home{
@@ -2147,10 +2159,6 @@ a{
         left: 180px;
         top: 100px;
         border: 100px solid #0ef;
-    }
-    
-    #particles-js{
-        height: 850px;
     }
     #home{
         max-height: 800px;
@@ -2442,10 +2450,6 @@ a{
     }
     #skills-sec{
         height: 1080px;
-    }
-    
-    #particles-js{
-        height: 1090px;
     }
     #home-image-wrapper{
         height: 740px;
@@ -2820,10 +2824,6 @@ a{
         display: flex;
         flex-direction: column;
     }
-   
-    #particles-js{
-        height: 1400px;
-    }
     #services-wrap{
         display: flex;
         flex-direction: column;
@@ -3084,9 +3084,6 @@ a{
     }
 }
 @media all and (max-width: 519px){
-    #particles-js{
-        height: 1590px;
-    }
     #role-wrapper{
         font-size: 25px;
     }
