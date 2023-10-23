@@ -17,16 +17,129 @@
     
     <div id="portfolio">
         <h4 class="center-subtopic">PORTFOLIO</h4>
-        <h1>Latest Work<span class="cyan">.</span></h1>
+        <h1 class="center-desc">Latest Work<span class="cyan">.</span></h1>
             <div class="container">
                 <div class="tab-titles">
-                    <p class="tab-links active-link">All</p>
-                    <p class="tab-links" >Design</p>
-                    <p class="tab-links" >Html/CSS/JS</p>
-                    <p class="tab-links" >Java</p>
+                    <p class="tab-links active-link" onclick="opentab('all')">Recent</p>
+                    <p class="tab-links" onclick="opentab('web')">Design</p>
+                    <p class="tab-links" onclick="opentab('html')">Html/CSS/JS</p>
+                    <p class="tab-links" onclick="opentab('java')">Java</p>
                 </div>
 
                 <div class="tab-contents active-tab" id="all">
+                    <div class="container">
+                        <div class="work-list">
+                            <div class="work-card">
+                                <div class="image-container">
+                                    <img src="Assets/projects/netflix.PNG" alt="metaverse">
+                                </div>
+                                <div class="work-card-footer">
+                                    <span>1 month ago</span>
+                                    <h3>Netflix Clone</h3>
+                                    <p>
+                                        Emulating Netflix's style, my HTML/CSS homepage clone offers a familiar interface with featured content, genres, and smooth design.Resembles Netflix, offers familiar interface.
+                                    </p>
+                                    <a href="https://github.com/KrishanMihiranga/Netflix-Clone" target="_blank"  class="read-more">Read More <span>&rarr;</span></a>
+                                </div>
+                            </div>
+                            <div class="work-card">
+                                <div class="image-container">
+                                    <img src="Assets/projects/card1.PNG" alt="metaverse">
+                                </div>
+                                <div class="work-card-footer">
+                                    <span>1 month ago</span>
+                                    <h3>Interactive card</h3>
+                                    <p>
+                                        Fashioned using HTML/CSS, my interactive card seamlessly merges text, images, and buttons. Enhanced by CSS animations, it's engaging & functional for dynamic websites.
+                                    </p>
+                                    <a href="https://github.com/KrishanMihiranga/interactive-card" target="_blank" class="read-more">Read More <span>&rarr;</span></a>
+                                </div>
+                            </div>
+
+                            <div class="work-card">
+                                <div class="image-container">
+                                    <img src="Assets/projects/checkbox1.PNG" alt="metaverse">
+                                </div>
+                                <div class="work-card-footer">
+                                    <span>1 month ago</span>
+                                    <h3>checkbox</h3>
+                                    <p>
+                                        Designed using HTML/CSS, my glowing checkbox adds flair to forms. When selected, it emits a subtle, visually appealing glow effect.CSS-powered checkbox glows elegantly when clicked.
+                                    </p>
+                                    <a href="https://github.com/KrishanMihiranga/glowing-checkbox" target="_blank" class="read-more">Read More <span>&rarr;</span></a>
+                                </div>
+                            </div>
+                            <div class="work-card">
+                                <div class="image-container">
+                                    <img src="Assets/projects/chatroom.png" alt="metaverse">
+                                </div>
+                                <div class="work-card-footer">
+                                    <span>2 month ago</span>
+                                    <h3>Chat Room</h3>
+                                    <p>
+                                        Built using Java sockets, my chatroom enables real-time communication. Users can exchange messages swiftly within a networked environment.Java chatroom facilitates real-time communication.
+                                    </p>
+                                    <a href="https://github.com/KrishanMihiranga/chatroom-applcation" target="_blank" class="read-more">Read More <span>&rarr;</span></a>
+                                </div>
+                            </div>
+
+                            <div class="work-card">
+                                <div class="image-container">
+                                    <img src="Assets/projects/reservate.png" alt="metaverse">
+                                </div>
+                                <div class="work-card-footer">
+                                    <span>2 month ago</span>
+                                    <h3>Reservate</h3>
+                                    <p>
+                                        In my first semester, I created a Java-based hotel management system. This efficient system handles bookings, guest information, and room management, streamlining hotel operations.
+                                    </p>
+                                    <a href="https://github.com/KrishanMihiranga/reservate-Layered" target="_blank" class="read-more">Read More <span>&rarr;</span></a>
+                                </div>
+                            </div>
+                          
+                        </div>
+        
+                    </div>
+                </div>
+
+                <div class="tab-contents" id="web">
+                    <div class="container">
+                        <div class="work-list">
+                            
+                            <div class="work-card">
+                                <div class="image-container">
+                                    <img src="Assets/projects/netflix.PNG" alt="metaverse">
+                                </div>
+                                <div class="work-card-footer">
+                                    <span>1 month ago</span>
+                                    <h3>Netflix Clone</h3>
+                                    <p>
+                                        Emulating Netflix's style, my HTML/CSS homepage clone offers a familiar interface with featured content, genres, and smooth design.Resembles Netflix, offers familiar interface.
+                                    </p>
+                                    <a href="https://github.com/KrishanMihiranga/Netflix-Clone" target="_blank"  class="read-more">Read More <span>&rarr;</span></a>
+                                </div>
+                            </div>
+                            
+                            <div class="work-card">
+                                <div class="image-container">
+                                    <img src="Assets/projects/web1.PNG" alt="metaverse">
+                                </div>
+                                <div class="work-card-footer">
+                                    <span>6 month ago</span>
+                                    <h3>portfolio</h3>
+                                    <p>
+                                        Crafted with HTML, CSS, and JS, my portfolio website showcases my skills, projects, and personality through interactive design.Interactive portfolio reflects skills creatively.
+                                    </p>
+                                    <a href="https://github.com/KrishanMihiranga/KrishanMihiranga.github.io" target="_blank" class="read-more">Read More <span>&rarr;</span></a>
+                                </div>
+                            </div>
+                        
+                        </div>
+        
+                    </div>
+                </div>
+
+                <div class="tab-contents" id="html">
                     <div class="container">
                         <div class="work-list">
                             
@@ -46,20 +159,6 @@
 
                             <div class="work-card">
                                 <div class="image-container">
-                                    <img src="Assets/projects/netflix.PNG" alt="metaverse">
-                                </div>
-                                <div class="work-card-footer">
-                                    <span>1 month ago</span>
-                                    <h3>Netflix Clone</h3>
-                                    <p>
-                                        Emulating Netflix's style, my HTML/CSS homepage clone offers a familiar interface with featured content, genres, and smooth design.Resembles Netflix, offers familiar interface.
-                                    </p>
-                                    <a href="https://github.com/KrishanMihiranga/Netflix-Clone" target="_blank"  class="read-more">Read More <span>&rarr;</span></a>
-                                </div>
-                            </div>
-                             
-                            <div class="work-card">
-                                <div class="image-container">
                                     <img src="Assets/projects/checkbox1.PNG" alt="metaverse">
                                 </div>
                                 <div class="work-card-footer">
@@ -74,6 +173,30 @@
                               
                             <div class="work-card">
                                 <div class="image-container">
+                                    <img src="Assets/projects/profilecard1.png" alt="profilecard">
+                                </div>
+                                <div class="work-card-footer">
+                                    <span>6 month ago</span>
+                                    <h3>profile card</h3>
+                                    <p>
+                                        Crafted with HTML/CSS, my animated profile card comes to life with captivating animations, showcasing information dynamically and creatively.CSS-animated profile card displays creativity.
+                                    </p>
+                                    <a href="https://github.com/KrishanMihiranga/animated-profile-card" target="_blank" class="read-more">Read More <span>&rarr;</span></a>
+                                </div>
+                            </div>
+                             
+                        </div>
+        
+                    </div>
+                </div>
+        
+        
+                <div class="tab-contents " id="java">
+                    <div class="container">
+                        <div class="work-list">
+
+                            <div class="work-card">
+                                <div class="image-container">
                                     <img src="Assets/projects/chatroom.png" alt="metaverse">
                                 </div>
                                 <div class="work-card-footer">
@@ -85,7 +208,7 @@
                                     <a href="https://github.com/KrishanMihiranga/chatroom-applcation" target="_blank" class="read-more">Read More <span>&rarr;</span></a>
                                 </div>
                             </div>
-                               
+
                             <div class="work-card">
                                 <div class="image-container">
                                     <img src="Assets/projects/reservate.png" alt="metaverse">
@@ -99,21 +222,7 @@
                                     <a href="https://github.com/KrishanMihiranga/reservate-Layered" target="_blank" class="read-more">Read More <span>&rarr;</span></a>
                                 </div>
                             </div>
-                             
-                            <div class="work-card">
-                                <div class="image-container">
-                                    <img src="Assets/projects/web1.PNG" alt="metaverse">
-                                </div>
-                                <div class="work-card-footer">
-                                    <span>6 month ago</span>
-                                    <h3>portfolio</h3>
-                                    <p>
-                                        Crafted with HTML, CSS, and JS, my portfolio website showcases my skills, projects, and personality through interactive design.Interactive portfolio reflects skills creatively.
-                                    </p>
-                                    <a href="https://github.com/KrishanMihiranga/KrishanMihiranga.github.io" target="_blank" class="read-more">Read More <span>&rarr;</span></a>
-                                </div>
-                            </div>
-                                 
+
                             <div class="work-card">
                                 <div class="image-container">
                                     <img src="Assets/projects/4inrow.PNG" alt="4inrow">
@@ -127,21 +236,7 @@
                                     <a href="https://github.com/KrishanMihiranga/connect-four-game" target="_blank" class="read-more">Read More <span>&rarr;</span></a>
                                 </div>
                             </div>
-                            
-                            <div class="work-card">
-                                <div class="image-container">
-                                    <img src="Assets/projects/profilecard1.png" alt="profilecard">
-                                </div>
-                                <div class="work-card-footer">
-                                    <span>6 month ago</span>
-                                    <h3>profile card</h3>
-                                    <p>
-                                        Crafted with HTML/CSS, my animated profile card comes to life with captivating animations, showcasing information dynamically and creatively.CSS-animated profile card displays creativity.
-                                    </p>
-                                    <a href="https://github.com/KrishanMihiranga/animated-profile-card" target="_blank" class="read-more">Read More <span>&rarr;</span></a>
-                                </div>
-                            </div>
-                                 
+
                             <div class="work-card">
                                 <div class="image-container">
                                     <img src="Assets/projects/aquabuddy.png" alt="metaverse">
@@ -155,7 +250,7 @@
                                     <a href="https://github.com/KrishanMihiranga/Soysa-Aquarium" target="_blank" class="read-more">Read More <span>&rarr;</span></a>
                                 </div>
                             </div>
-                             
+
                             <div class="work-card">
                                 <div class="image-container">
                                     <img src="Assets/projects/stopwatch.png" alt="metaverse">
@@ -169,7 +264,7 @@
                                     <a href="https://github.com/KrishanMihiranga/stopWatch-javaFX" target="_blank" class="read-more">Read More <span>&rarr;</span></a>
                                 </div>
                             </div>
-                           
+
                             <div class="work-card">
                                 <div class="image-container">
                                     <img src="Assets/projects/login.png" alt="metaverse">
@@ -183,7 +278,7 @@
                                     <a href="https://github.com/KrishanMihiranga/AnimatedLoginform-javaFX" target="_blank" class="read-more">Read More <span>&rarr;</span></a>
                                 </div>
                             </div>
-                             
+
                             <div class="work-card">
                                 <div class="image-container">
                                     <img src="Assets/projects/cli-student-management.png" alt="cli-student-management">
@@ -197,32 +292,11 @@
                                     <a href="https://github.com/KrishanMihiranga/studentManagementSystem-java" target="_blank" class="read-more">Read More <span>&rarr;</span></a>
                                 </div>
                             </div>
-                             
-                        </div>
-        
-                    </div>
-                </div>
-
-                <div class="tab-contents" id="html">
-                    <div class="container">
-                        <div class="work-list">
-                            
-                             
-                        </div>
         
                     </div>
                 </div>
         
-        
-                <div class="tab-contents " id="java">
-                    <div class="container">
-                        <div class="work-list">
-                           
-        
-                    </div>
-                </div>
-        
-                <div class="tab-contents" id="reactntv">
+                <div class="tab-contents" id="web">
                     <div class="container">
                         <div class="work-list">
                            
@@ -232,13 +306,32 @@
                     </div>
                 </div>
         </div>
-      </div>  
+        
+
+            <h5 class="middle-quote topmargin-quote"><span class="cyan">"</span> Turning ideas into reality,one algorithm at a time. <span class="cyan">"</span></h5>                
+        </div>
+    </div>
+    <div class="copyright-area">
+        <div class="copyright-text">
+             <p>Copyright &copy; 2023, All Right Reserved <a href="https://instagram.com/xxp3cto">Kishan</a></p>
+        </div>
+    
     </div>
 
-     <footer id="portfolio-footer">
-        <div class="copyright">
-            <p><i class='bx bx-copyright'></i> 2023 Kishan. All rights reserved. Building the future one line of code at a time.</p>
-        </div>
-    </footer>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+                }
+             for(tabcontent of tabcontents){
+               tabcontent.classList.remove("active-tab");
+             }
+             event.currentTarget.classList.add("active-link");
+             document.getElementById(tabname).classList.add("active-tab");
+             }
+    </script>
 </body>
 </html>
