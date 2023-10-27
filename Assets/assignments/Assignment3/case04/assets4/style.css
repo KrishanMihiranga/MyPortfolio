@@ -1,0 +1,61 @@
+body{
+    overflow-x: hidden;
+}
+.card{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+.header{
+    width: 100vw;
+    height: 8vh;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.logo{
+    color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 10px;
+    font-weight: bold;
+    font-size: 2vw;
+    width: fit-content;
+    height: fit-content;
+    font-family: Arial;
+}
+.center{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+    font-family: Arial;
+    font-size: 100px;
+}
+#div2{
+    background-color: cornflowerblue;
+}
+#div3{
+    background-color: grey;
+}
+#div4{
+    background-color: orangered;
+}
+#card1{
+    background-color: red;
+}
+#card2{
+    background-color: darkblue;
+}
+#card3{
+    background-color: black;
+}
+#card4{
+    background-color: darkred;
+}

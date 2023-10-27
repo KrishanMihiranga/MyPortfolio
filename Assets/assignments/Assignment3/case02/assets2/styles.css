@@ -1,0 +1,111 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+}
+#header{
+    width: 100vw;
+    height: 5vw;
+    border-bottom: 1px solid black;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+#logo{
+    padding-left: 3vw;
+    position: absolute;
+    width: 10vw;
+    cursor: pointer;
+}
+#navbar{
+    position: absolute;
+    left: 73vw;
+}
+#navbar a{
+    font-family: 'Poppins', sans-serif;
+    padding: 8px;
+    font-size: 1vw;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+#navbar a:hover{
+    color: red;
+}
+section{
+    position: relative;
+}
+#left-div{
+    background-color: #4C0083;
+    width: 20%;
+    height: 100%;
+    position: absolute;
+}
+#right-div{
+    text-align: center;
+    width: 81%;
+    left: 20%;
+    position: relative;
+}
+p{
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+#article {
+    font-family: 'Preahvihear', sans-serif;
+    padding: 3vw;
+}
+#left-div a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    font-size: 1vw;
+}
+#left-nav{
+    position: absolute;
+    left: 2vw;
+    top: 8vw;
+    font-family: 'Poppins', sans-serif;
+}
+#left-nav a{
+    font-size: 1.5vw;
+}
+#left-nav a:hover{
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+.gif {
+    position: relative;
+    top: 1vh;
+    display: inline-block;
+    justify-content: center;
+}
+
+.gif img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border: 1px solid red;
+    margin: 5px;
+}
+
+
+#gif1, #gif2, #gif3 {
+    display: inline-block;
+}
+div{
+    position: relative;
+}
+#footer{
+    background-color: gray;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    width: 100vw;
+    padding-top:2vh;
+    padding-bottom:2vh;
+}

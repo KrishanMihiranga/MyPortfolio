@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment9</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        hr{
+            background-color: white;
+            border: 1px solid white;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        H1{
+            color: red;
+            position: relative;
+            top: 30vh;
+            font-family: Poppins,'sans-serif';
+            font-size: 30px;
+        }
+        .light{
+            border-radius: 100%;
+            width: 25px;
+            height: 25px;
+            border: 1px solid red;
+            display: inline-block;
+        }
+        .content{
+            position: relative;
+            top: 30vh;
+        }
+        button{
+            width: 100px;
+            height: 30px;
+            border-color: red;
+            color: red;
+            border-radius: 5px;
+            background-color: transparent;
+            cursor: pointer;
+            margin: 10px;
+        }
+        button:hover{
+            border-color: red;
+            color: black;
+            background-color: red;
+        }
+        .buttons{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .light-strip{
+            display: flex;
+            margin-right: 3%;
+            margin-left: 3%;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Javascript Knight Rider</h1>
+<div class="content">
+    <hr>
+    <div class="light-strip">
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+    </div>
+    <hr>
+    <div class="buttons">
+        <button type="button" id="start">Start</button>
+        <button type="button" id="stop">Stop</button>
+    </div>
+    <audio src="assets/audio/audio.mp3" id="audio"></audio>
+</div>
+<script src="assets/lib/jquery.min.js"></script>
+<script>
+    let count =-1;
+    var currentDirrection = "RIGHT";
+    var lightCount = 58;
+
+    const lightOn = ()=>{
+        if (currentDirrection=="RIGHT"){
+            count++;
+            $('.light').eq(count).css("background", "red");
+            if (count-1>=0){
+                $('.light').eq(count-1).css("background", "#ffa9a9");
+                $('.light').eq(count-2).css("background", "#rgba(255,105,105,0.73)");
+                $('.light').eq(count-3).css("background", "transparent");
+            }
+            if (count== (lightCount)){
+                currentDirrection = "LEFT";
+            }
+        }else {
+            count--;
+            $('.light').eq(count).css("background", "red");
+            $('.light').eq(count+1).css("background", "#ffa9a9");
+            $('.light').eq(count+2).css("background", "rgba(255,105,105,0.73)");
+            $('.light').eq(count+3).css("background", "transparent");
+            if (count== 0){
+                currentDirrection = "RIGHT";
+            }
+        }
+    }
+    let intervalID;
+
+    $("#start").on("click",()=>{
+        if (intervalID==null){
+            intervalID = setInterval(lightOn, 20);
+            $("#audio")[0].play();
+        }
+
+    });
+    $("#stop").on("click", ()=>{
+        clearInterval(intervalID);
+        intervalID = null;
+        $("#audio")[0].pause();
+    });
+</script>
+</body>
+</html>

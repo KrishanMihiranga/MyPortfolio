@@ -1637,7 +1637,8 @@ a{
 .assignments-card-footer-content{
     color: black;
 }
-.assignments-card-content-wrapper a{
+
+.btn-ghub{
     margin-top: 10px;
     box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
     color: black;
@@ -1689,6 +1690,21 @@ a{
 .a-btn{
     font-size: 100px;
     cursor: pointer;
+}
+.assignment-cases{
+    display: flex;
+    margin: 5px 5px 10px 5px;
+}
+.assginment-btn a{
+    margin-left: 5px;
+    cursor: pointer;
+    color: #000;
+    font-size: 12px;
+    transition-duration: .2s;
+}
+.assginment-btn a:hover{
+    color: #0ef;
+    text-decoration: underline;
 }
 /* ----------------------gallery-------------------- */
 #gallery-topic {

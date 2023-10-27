@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' , sans-serif;
+    color: white;
+}
+body{
+    background-color: cornflowerblue;
+}
+div{
+    width: 20vw;
+    aspect-ratio: 1/1;
+    background-color: gray;
+    border-radius: 100%;
+    border: .5vw solid white;
+    border-top: .5vw solid red;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition-duration: 2s;
+}
+h1{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+}
+div:hover{
+    transform: rotate(360deg);
+}
