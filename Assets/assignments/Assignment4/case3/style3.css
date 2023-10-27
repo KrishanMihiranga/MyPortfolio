@@ -1,0 +1,41 @@
+body{
+    overflow: hidden;
+}
+div{
+    width: 10vw;
+    height: 5vw;
+    background-color: purple;
+    border-radius: 30px;
+    position: absolute;
+    animation: move-div 4s linear alternate infinite;
+}
+@keyframes move-div {
+    0%{
+        margin-top: 0;
+        margin-left: 0;
+    }
+    25%{
+        margin-top: 0;
+        margin-left: calc(100vw - 11vw);
+        transform: rotate(180deg);
+        background-color: aqua;
+    }
+    50%{
+        margin-top: calc(100vh - 6vw);
+        margin-left: calc(100vw - 11vw);
+        transform: rotate(0);
+        background-color: red;
+    }
+    75%{
+        margin-top: calc(100vh - 6vw);
+        margin-left: 0;
+        transform: rotate(180deg);
+        background-color: gold;
+    }
+    100%{
+        margin-top: 0;
+        margin-left: 0;
+        transform: rotate(0);
+        background-color: lime;
+    }
+}

@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="Welcome to Kishan Mihiranga's portfolio. I'm a 20-year-old Full-stack Developer from Bandaragama, Sri Lanka. I'm currently honing my skills at the Institute of Software Engineering (IJSE). My true passion revolves around creating vibrant web experiences. Proficient in Java and deeply engrossed in web development, my goal is to forge fluid and user-centric solutions that truly resonate. My portfolio is a testament to the fusion of youthful zeal and technical finesse, where fresh ideas evolve into functional digital realms." name="description">
+    <meta content="Kishan Mihiranga, Krishan Mihiranga, Kishan, Krishan, gdse65, software eengineering , IJSE, CMJD, portfolio, website, Dark theme website" name="keywords">
+    <meta content="Kishan Mihiranga" name="author">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Assets/img/icon.png" type="image/x-icon">
+    <title>Portfolio | Kishan Mihiranga</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <div id="cursor-dot" data-cursor-dot></div>
+    <div id="cursor-outline" data-cursor-outline></div>
+    <div id="cursor-blur"></div>
+    <header class="header">
+        <a href="#" class="logo">Portfolio<span class="cyan">.</span></a>
+
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <i class='bx bx-x' id="close-icon"></i>
+        </label>
+
+        <nav class="nav-bar">
+            <a href="#home"style="--i:0;">Home</a>
+            <a href="#aboutMe"style="--i:1;">About</a>
+            <a href="#services"style="--i:2;">Services</a>
+            <a href="#portfolio"style="--i:3;">Portfolio</a>
+            <a href="#gallery"style="--i:4;">Gallery</a>
+            <a href="#footer-section"style="--i:4;">Contact</a>
+        </nav>
+    </header>
+    
+
+    <div id="home">
+                <div class="home-content" >
+                    <h3>Hello, It's Me <div></div></h3>
+                    <h1 id="hero-name">Kishan Mihiranga</h1>
+                    <h3 id="role-wrapper">And I'm a <span id="role" class="multiple-text"></span></h3>
+                    <p>Enthusiastic student mastering front-end & back-end web development, fusing responsive <br>
+                        design with strong UI/UX expertise. Committed to open-source contribution<span class="cyan">.</span></p>
+    
+                    <div class="social-media">
+                        <a href="https://github.com/KrishanMihiranga"  target="_blank" class="git"><i class='bx bxl-github'></i></a>
+                        <a href="https://codepen.io/mkrishan" target="_blank" class="codePen"><i class='bx bxl-codepen'></i></a>
+                        <a href="https://instagram.com/xxp3cto" target="_blank" class="instagram"><i class='bx bxl-instagram' ></i></a>
+                        <a href="https://linkedin.com/in/krishan mihiranga" target="_blank" class="linkedIn"><i class='bx bxl-linkedin' ></i></a>
+                    </div>
+                    <div class="btn">
+                        <a href="Assets/downloads/test.txt" download>Download CV</a>
+                    </div>
+                        
+                </div>
+    
+                <div id="home-image-wrapper">
+                    <div id="home-image-cyan-circle">
+                    </div>
+                    <div class="home-image">
+                        <img src="Assets/img/hero.png" width="500" alt="Hero Image" id="h-image">
+                    </div>
+                </div>
+                <div class="cubes">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+    
+    </div>
+        
+        <hr>
+        <div>
+            <div id="aboutMe">
+            
+                <h4 class="center-subtopic">BIOGRAPHY</h4>
+    
+                <div class="div-wrapper">
+                    <div class="left">
+                        <div class="card hidden">
+                            <div class="lines">
+                            </div>
+                            <div class="content">
+                               <div class="card-img">
+                                   <img src="Assets/img/hero.png" alt="hero">
+                               </div>
+                            </div>
+                       </div>
+                    </div>
+                    
+    
+                    <div class="right-div">
+    
+                        <h1 class="right">Who am I <span class="cyan">?</span><br>
+                            <div class="first-line"></div>
+                            <div class="second-line"></div>
+                        </h1>
+    
+        
+                        <p class="right">As a passionate software engineering student, I specialize in Java and am constantly seeking opportunities to expand 
+                            my knowledge and skills. With a commitment to using technology to make a positive impact on society, I believe in pushing 
+                            myself to grow and improve as a developer. Whether you're interested in collaborating on a project or discussing the latest
+                             trends in software engineering, I'm always up for a challenge and excited to connect with like-minded professionals.
+                        </p>
+            
+                        <div class="tab-titles right">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('awards')">Awards</p>
+                            <p class="tab-links" onclick="opentab('sports')">Sports</p>
+    
+                        </div>
+            
+                        <div class="tab-contents active-tab right" id="skills">
+                            <ul>
+                                <li><span>Stand-alone</span><br>Java</li>
+                                <li><span>Database</span><br>My-SQL</li>
+                                <li><span>Web-development</span><br>Html / css / JavaScript</li>
+                                <li><span>Designing</span><br>Photoshop / illustrator / Lightroom / Ae</li>
+                                <li><span>Editing</span><br>Blender / Premeire-Pro / Flash / Figma / canva</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2021 - Current</span><br>Dummy Data</li>
+                                
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2021</span><br>Awarded Colours for GCE A/L's (Taxila Central College Horana).</li>
+                                <li><span>2019</span><br>Completed CERTIFICATE OF COMPUTER APPLICATIONS in Adobe Photoshop and Adobe Flash from NIE's Computer Department.</li> 
+                                <li><span>2018-2020</span><br>Served as Senior Prefect Guide at Dhamma school.</li>
+                                <li><span>2018</span><br>Awarded Colours for GCE O/L's (Bandaragama Central College).</li>
+                                <li><span>2017-2018</span><br>Served as Senior Prefect Guide at Bandaragama Central College.</li>
+                                <li><span>2013-2015</span><br>Completed Pan America GojuRyu Karatedo Systems Diploma as a 1<sup>st</sup> Dan Black Belt.</li>
+                                <li><span>2012</span><br>Completed a NIE Computer Department course leading to a Certificate of Computer Applications, covering Paint, Word, Excel, PowerPoint, Access, Internet & Email.</li>
+                                <li><span>2012</span><br>Awarded Colours for grade 5 Scholars(Bandaragama Central College).</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents"  id="awards">
+                            <ul>
+                                <li><span>2023</span><br>Achieved 7th place in Professional Software Project during IT FIRST SEMESTER GDSE65 at IJSE.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="sports">
+                            <ul>
+                                <li><span>2019</span><br>Participated in the U.S.A. Chiro-kan bushi shinho Karate Do Open Chamionship and won 2nd Place(KUMITE).</li>
+                                <li><span>2014-2017</span><br>1st Place in Karate - KATA inter-house Sport Meet at Bandaragama Central College.</li>
+                                <li><span>2015-2017</span><br>1st Place in Karate - KATA inter-house Sport Meet at Bandaragama Central College.</li>
+                                <li><span>2015-2017</span><br>1st Place in Karate - KUMITE inter-house Sport Meet at Bandaragama Central College.</li>
+                                <li><span>2015</span><br>Participated in the 1st International invitational K.A.J. Gojuryu Karate Do tournament and won 1st Place (KATA , KUMITE).</li>
+                                <li><span>2013</span><br>Got 2nd Place Karate - KATA & KUMITE in Karate Do Chamionship Kalutara District.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+    
+                <h5 class="middle-quote"><span class="cyan">"</span> Believe. Archieve. Inspire. <span class="cyan">"</span></h5>
+                
+            </div>
+        </div>
+       
+        <hr>
+
+        
+            <div id="services">
+                <h4 class="center-subtopic">SERVICES</h4>
+                <h1 class="center-desc">What I Do<span class="cyan">?</span></h1>
+                
+                
+                    <div id="services-wrap">
+
+                        
+                            <div class="serv-box left">
+                                <div class="elements serv-bg"></div>
+                                <div class="elements imgBx">
+                                    <img src="Assets/img/web.jpg" alt="">
+                                </div>    
+                                <div class="elements name">
+                                    <h2>Web Development</h2>
+                                </div>
+                                <div class="elements serv-content">
+                                    <p>"Ready to make your dream website a reality? Contact me today and let's create a stunning online presence tailored to your needs."
+                                    </p>
+                                </div>
+                                <div class="serv-card">
+                    
+                                </div>
+                            </div>
+                          
+            
+                        <div class="serv-box serv-box2 left2">
+                            <div class="elements serv-bg"></div>
+                            <div class="elements imgBx">
+                                <img src="Assets/img/ui.jpg" alt="">
+                            </div>    
+                            <div class="elements name">
+                                <h2>UI/UX Design</h2>
+                            </div>
+                            <div class="elements serv-content">
+                                <p>"Elevate User Experiences with Expert UI/UX Design. Contact Me Now!"
+                                </p>
+                            </div>
+                            <div class="serv-card">
+                
+                            </div>
+                        </div>
+
+                        
+                            <div class="serv-box serv-box3 left3">
+                                <div class="elements serv-bg"></div>
+                                <div class="elements imgBx">
+                                    <img src="Assets/img/pos.png" alt="">
+                                </div>    
+                                <div class="elements name">
+                                    <h2>POS Systems</h2>
+                                </div>
+                                <div class="elements serv-content">
+                                    <p>"Streamline Your Business with Custom POS System Development. Get in Touch Today!"
+                                    </p>
+                                </div>
+                                <div class="serv-card">
+                    
+                                </div>
+                            </div>
+                        </div>
+                    
+                
+                <div class="cubes">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        
+        <hr>
+        <h4 class="center-subtopic">TOP SKILLS</h4>
+        <div class="skills_section" id="skills-sec">
+            <h1 class="center-desc">My Skills<span class="cyan">.</span></h1>
+            <div class="skills_main left">
+                <div class="skill_bar">
+                    <div class="info">
+                        <p>HTML</p>
+                        <P>95%</P>
+                    </div>
+                    <div class="bar">
+                        <span class="html"></span>
+                    </div>
+                </div>
+                <div class="skill_bar">
+                    <div class="info">
+                        <p>CSS</p>
+                        <P>95%</P>
+                    </div>
+                    <div class="bar">
+                        <span class="css"></span>
+                    </div>
+                </div>
+                <div class="skill_bar">
+                    <div class="info">
+                        <p>JavaScript</p>
+                        <P>80%</P>
+                    </div>
+                    <div class="bar">
+                        <span class="js"></span>
+                    </div>
+                </div>
+                <div class="skill_bar">
+                    <div class="info">
+                        <p>Java</p>
+                        <P>90%</P>
+                    </div>
+                    <div class="bar">
+                        <span class="java"></span>
+                    </div>
+                </div>
+                <div class="skill_bar">
+                    <div class="info">
+                        <p>MySQL</p>
+                        <P>75%</P>
+                    </div>
+                    <div class="bar">
+                        <span class="sql"></span>
+                    </div>
+                </div>
+                <div class="skill_bar">
+                    <div class="info">
+                        <p>Lua</p>
+                        <P>60%</P>
+                    </div>
+                    <div class="bar">
+                        <span class="lua"></span>
+                    </div>
+                </div>
+                
+            </div>
+
+
+            <div class="sc-container">
+                <div class="s-card">
+                    <div class="percent" style="--clr:#0ef; --num:90;">
+                        <div class="sc-dot"></div>
+                        <svg>
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle cx="70" cy="70" r="70"></circle>
+                        </svg>
+                        <div class="sc-number">
+                            <h2>90<span>%</span></h2>
+                            <p>Adaptation</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="s-card">
+                    <div class="percent" style="--clr:#0ef; --num:75;">
+                        <div class="sc-dot"></div>
+                        <svg>
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle cx="70" cy="70" r="70"></circle>
+                        </svg>
+                        <div class="sc-number">
+                            <h2>75<span>%</span></h2>
+                            <p>Team work</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="s-card">
+                    <div class="percent" style="--clr:#0ef; --num:85;">
+                        <div class="sc-dot"></div>
+                        <svg>
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle cx="70" cy="70" r="70"></circle>
+                        </svg>
+                        <div class="sc-number">
+                            <h2>85<span>%</span></h2>
+                            <p>Management</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="s-card">
+                    <div class="percent" style="--clr:#0ef; --num:80;">
+                        <div class="sc-dot"></div>
+                        <svg>
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle cx="70" cy="70" r="70"></circle>
+                        </svg>
+                        <div class="sc-number">
+                            <h2>80<span>%</span></h2>
+                            <p>creativity</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="s-card">
+                    <div class="percent" style="--clr:#0ef; --num:90;">
+                        <div class="sc-dot"></div>
+                        <svg>
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle cx="70" cy="70" r="70"></circle>
+                        </svg>
+                        <div class="sc-number">
+                            <h2>90<span>%</span></h2>
+                            <p>solution</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <hr id="s-hr">
+        <div id="portfolio">
+            <h4 class="center-subtopic">PORTFOLIO</h4>
+            <h1 class="center-desc">Latest Work<span class="cyan">.</span></h1>
+                <div class="container">
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('all')">Recent</p>
+                        <p class="tab-links" onclick="opentab('web')">Design</p>
+                        <p class="tab-links" onclick="opentab('html')">Html/CSS/JS</p>
+                        <p class="tab-links" onclick="opentab('java')">Java</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="all">
+                        <div class="container">
+                            <div class="work-list">
+                                <div class="work-card">
+                                    <div class="image-container">
+                                        <img src="Assets/projects/netflix.PNG" alt="metaverse">
+                                    </div>
+                                    <div class="work-card-footer">
+                                        <span>1 month ago</span>
+                                        <h3>Netflix Clone</h3>
+                                        <p>
+                                            Emulating Netflix's style, my HTML/CSS homepage clone offers a familiar interface with featured content, genres, and smooth design.Resembles Netflix, offers familiar interface.
+                                        </p>
+                                        <a href="https://github.com/KrishanMihiranga/Netflix-Clone" target="_blank"  class="read-more">Read More <span>&rarr;</span></a>
+                                    </div>
+                                </div>
+                                <div class="work-card">
+                                    <div class="image-container">
+                                        <img src="Assets/projects/card1.PNG" alt="metaverse">
+                                    </div>
+                                    <div class="work-card-footer">
+                                        <span>1 month ago</span>
+                                        <h3>Interactive card</h3>
+                                        <p>
+                                            Fashioned using HTML/CSS, my interactive card seamlessly merges text, images, and buttons. Enhanced by CSS animations, it's engaging & functional for dynamic websites.
+                                        </p>
+                                        <a href="https://github.com/KrishanMihiranga/interactive-card" target="_blank" class="read-more">Read More <span>&rarr;</span></a>
+                                    </div>
+                                </div>
+
+                                <div class="work-card">
+                                    <div class="image-container">
+                                        <img src="Assets/projects/checkbox1.PNG" alt="metaverse">
+                                    </div>
+                                    <div class="work-card-footer">
+                                        <span>1 month ago</span>
+                                        <h3>checkbox</h3>
+                                        <p>
+                                            Designed using HTML/CSS, my glowing checkbox adds flair to forms. When selected, it emits a subtle, visually appealing glow effect.CSS-powered checkbox glows elegantly when clicked.
+                                        </p>
+                                        <a href="https://github.com/KrishanMihiranga/glowing-checkbox" target="_blank" class="read-more">Read More <span>&rarr;</span></a>
+                                    </div>
+                                </div>
+                                <div class="work-card">
+                                    <div class="image-container">
+                                        <img src="Assets/projects/chatroom.png" alt="metaverse">
+                                    </div>
+                                    <div class="work-card-footer">
+                                        <span>2 month ago</span>
+                                        <h3>Chat Room</h3>
+                                        <p>
+                                            Built using Java sockets, my chatroom enables real-time communication. Users can exchange messages swiftly within a networked environment.Java chatroom facilitates real-time communication.
+                                        </p>
+                                        <a href="https://github.com/KrishanMihiranga/chatroom-applcation" target="_blank" class="read-more">Read More <span>&rarr;</span></a>
+                                    </div>
+                                </div>
+
+                                <div class="work-card">
+                                    <div class="image-container">
+                                        <img src="Assets/projects/reservate.png" alt="metaverse">
+                                    </div>
+                                    <div class="work-card-footer">
+                                        <span>2 month ago</span>
+                                        <h3>Reservate</h3>
+                                        <p>
+                                            In my first semester, I created a Java-based hotel management system. This efficient system handles bookings, guest information, and room management, streamlining hotel operations.
+                                        </p>
+                                        <a href="https://github.com/KrishanMihiranga/reservate-Layered" target="_blank" class="read-more">Read More <span>&rarr;</span></a>
+                                    </div>
+                                </div>
+                              
+                            </div>
+            
+                        </div>
+                    </div>
+
+                    <div class="tab-contents" id="web">
+                        <div class="container">
+                            <div class="work-list">
+                                
+                                <div class="work-card">
+                                    <div class="image-container">
+                                        <img src="Assets/projects/netflix.PNG" alt="metaverse">
+                                    </div>
+                                    <div class="work-card-footer">
+                                        <span>1 month ago</span>
+                                        <h3>Netflix Clone</h3>
+                                        <p>
+                                            Emulating Netflix's style, my HTML/CSS homepage clone offers a familiar interface with featured content, genres, and smooth design.Resembles Netflix, offers familiar interface.
+                                        </p>
+                                        <a href="https://github.com/KrishanMihiranga/Netflix-Clone" target="_blank"  class="read-more">Read More <span>&rarr;</span></a>
+                                    </div>
+                                </div>
+                                
+                                <div class="work-card">
+                                    <div class="image-container">
+                                        <img src="Assets/projects/web1.PNG" alt="metaverse">
+                                    </div>
+                                    <div class="work-card-footer">
+                                        <span>6 month ago</span>
+                                        <h3>portfolio</h3>
+                                        <p>
+                                            Crafted with HTML, CSS, and JS, my portfolio website showcases my skills, projects, and personality through interactive design.Interactive portfolio reflects skills creatively.
+                                        </p>
+                                        <a href="https://github.com/KrishanMihiranga/KrishanMihiranga.github.io" target="_blank" class="read-more">Read More <span>&rarr;</span></a>
+                                    </div>
+                                </div>
+                            
+                            </div>
+            
+                        </div>
+                    </div>
+
+                    <div class="tab-contents" id="html">
+                        <div class="container">
+                            <div class="work-list">
+                                
+                                <div class="work-card">
+                                    <div class="image-container">
+                                        <img src="Assets/projects/card1.PNG" alt="metaverse">
+                                    </div>
+                                    <div class="work-card-footer">
+                                        <span>1 month ago</span>
+                                        <h3>Interactive card</h3>
+                                        <p>
+                                            Fashioned using HTML/CSS, my interactive card seamlessly merges text, images, and buttons. Enhanced by CSS animations, it's engaging & functional for dynamic websites.
+                                        </p>
+                                        <a href="https://github.com/KrishanMihiranga/interactive-card" target="_blank" class="read-more">Read More <span>&rarr;</span></a>
+                                    </div>
+                                </div>
+
+                                <div class="work-card">
+                                    <div class="image-container">
+                                        <img src="Assets/projects/checkbox1.PNG" alt="metaverse">
+                                    </div>
+                                    <div class="work-card-footer">
+                                        <span>1 month ago</span>
+                                        <h3>checkbox</h3>
+                                        <p>
+                                            Designed using HTML/CSS, my glowing checkbox adds flair to forms. When selected, it emits a subtle, visually appealing glow effect.CSS-powered checkbox glows elegantly when clicked.
+                                        </p>
+                                        <a href="https://github.com/KrishanMihiranga/glowing-checkbox" target="_blank" class="read-more">Read More <span>&rarr;</span></a>
+                                    </div>
+                                </div>
+                                  
+                                <div class="work-card">
+                                    <div class="image-container">
+                                        <img src="Assets/projects/profilecard1.png" alt="profilecard">
+                                    </div>
+                                    <div class="work-card-footer">
+                                        <span>6 month ago</span>
+                                        <h3>profile card</h3>
+                                        <p>
+                                            Crafted with HTML/CSS, my animated profile card comes to life with captivating animations, showcasing information dynamically and creatively.CSS-animated profile card displays creativity.
+                                        </p>
+                                        <a href="https://github.com/KrishanMihiranga/animated-profile-card" target="_blank" class="read-more">Read More <span>&rarr;</span></a>
+                                    </div>
+                                </div>
+                                 
+                            </div>
+            
+                        </div>
+                    </div>
+            
+            
+                    <div class="tab-contents " id="java">
+                        <div class="container">
+                            <div class="work-list">
+
+                                <div class="work-card">
+                                    <div class="image-container">
+                                        <img src="Assets/projects/chatroom.png" alt="metaverse">
+                                    </div>
+                                    <div class="work-card-footer">
+                                        <span>2 month ago</span>
+                                        <h3>Chat Room</h3>
+                                        <p>
+                                            Built using Java sockets, my chatroom enables real-time communication. Users can exchange messages swiftly within a networked environment.Java chatroom facilitates real-time communication.
+                                        </p>
+                                        <a href="https://github.com/KrishanMihiranga/chatroom-applcation" target="_blank" class="read-more">Read More <span>&rarr;</span></a>
+                                    </div>
+                                </div>
+
+                                <div class="work-card">
+                                    <div class="image-container">
+                                        <img src="Assets/projects/reservate.png" alt="metaverse">
+                                    </div>
+                                    <div class="work-card-footer">
+                                        <span>2 month ago</span>
+                                        <h3>Reservate</h3>
+                                        <p>
+                                            In my first semester, I created a Java-based hotel management system. This efficient system handles bookings, guest information, and room management, streamlining hotel operations.
+                                        </p>
+                                        <a href="https://github.com/KrishanMihiranga/reservate-Layered" target="_blank" class="read-more">Read More <span>&rarr;</span></a>
+                                    </div>
+                                </div>
+
+                                <div class="work-card">
+                                    <div class="image-container">
+                                        <img src="Assets/projects/4inrow.PNG" alt="4inrow">
+                                    </div>
+                                    <div class="work-card-footer">
+                                        <span>6 month ago</span>
+                                        <h3>Connect 4 </h3>
+                                        <p>
+                                            Designed in Java, my Connect 4 game employs the Min-Max algorithm for intelligent AI moves, ensuring challenging and strategic gameplay.Java Connect 4 game, strategic AI.
+                                        </p>
+                                        <a href="https://github.com/KrishanMihiranga/connect-four-game" target="_blank" class="read-more">Read More <span>&rarr;</span></a>
+                                    </div>
+                                </div>
+
+                                <div class="work-card">
+                                    <div class="image-container">
+                                        <img src="Assets/projects/aquabuddy.png" alt="metaverse">
+                                    </div>
+                                    <div class="work-card-footer">
+                                        <span>6 month ago</span>
+                                        <h3>aqua buddy</h3>
+                                        <p>
+                                            Matrix (pvt) Ltd. developed software for Soysa Aquarium in Panadura, completing in 1.5 months. It efficiently manages the aquarium and measures water temperature and pH.
+                                        </p>
+                                        <a href="https://github.com/KrishanMihiranga/Soysa-Aquarium" target="_blank" class="read-more">Read More <span>&rarr;</span></a>
+                                    </div>
+                                </div>
+
+                                <div class="work-card">
+                                    <div class="image-container">
+                                        <img src="Assets/projects/stopwatch.png" alt="metaverse">
+                                    </div>
+                                    <div class="work-card-footer">
+                                        <span>6 month ago</span>
+                                        <h3>stop watch</h3>
+                                        <p>
+                                            Using JavaFX, I designed a functional stopwatch application. It accurately tracks time, features start/pause/reset controls, and offers a user-friendly interface.JavaFX stopwatch tracks time precisely.
+                                        </p>
+                                        <a href="https://github.com/KrishanMihiranga/stopWatch-javaFX" target="_blank" class="read-more">Read More <span>&rarr;</span></a>
+                                    </div>
+                                </div>
+
+                                <div class="work-card">
+                                    <div class="image-container">
+                                        <img src="Assets/projects/login.png" alt="metaverse">
+                                    </div>
+                                    <div class="work-card-footer">
+                                        <span>6 month ago</span>
+                                        <h3>animated login</h3>
+                                        <p>
+                                            Using JavaFX, I created an animated login interface that blends aesthetics and functionality, ensuring engaging user interactions and seamless authentication.Dynamic JavaFX login.
+                                        </p>
+                                        <a href="https://github.com/KrishanMihiranga/AnimatedLoginform-javaFX" target="_blank" class="read-more">Read More <span>&rarr;</span></a>
+                                    </div>
+                                </div>
+
+                                <div class="work-card">
+                                    <div class="image-container">
+                                        <img src="Assets/projects/cli-student-management.png" alt="cli-student-management">
+                                    </div>
+                                    <div class="work-card-footer">
+                                        <span>7 month ago</span>
+                                        <h3>Student management</h3>
+                                        <p>
+                                            Efficient CLI student system in Java, managing records seamlessly through a user-friendly command-line interface.Java CLI system efficiently manages students.
+                                        </p>
+                                        <a href="https://github.com/KrishanMihiranga/studentManagementSystem-java" target="_blank" class="read-more">Read More <span>&rarr;</span></a>
+                                    </div>
+                                </div>
+            
+                        </div>
+                    </div>
+            
+                    <div class="tab-contents" id="web">
+                        <div class="container">
+                            <div class="work-list">
+                               
+            
+                            </div>
+            
+                        </div>
+                    </div>
+            </div>
+            
+
+            <div class="btn topmargin">
+                <a href="portfolio.html">See more</a>
+            </div>
+
+                <h5 class="middle-quote topmargin-quote"><span class="cyan">"</span> Turning ideas into reality,one algorithm at a time. <span class="cyan">"</span></h5>                
+            </div>
+        </div>
+        
+
+        <div class="bg-3">
+            <div id="projects-done">
+                <div id="projects-done-wrapper">
+                    <span class="li">
+                        <p class="projects-count">
+                            20
+                        </p>
+                        <p class="projects-heading">
+                            Projects Done
+                        </p>
+                    </span>
+                    <span class="li">
+                        <p class="projects-count">
+                            02
+                        </p>
+                        <p class="projects-heading">
+                            Happy Clients
+                        </p>
+                    </span>
+                    <span class="li">
+                        <p class="projects-count">
+                            01
+                        </p>
+                        <p class="projects-heading">
+                            Awards Win
+                        </p>
+                    </span>
+                    <span class="li">
+                        <p class="projects-count">
+                            01
+                        </p>
+                        <p class="projects-heading">
+                            Years of Experience
+                        </p>
+                    </span>
+                </div>
+            </div>
+            <div id="testimonial">
+                <div id="testimonial-topic">
+                    <h4 class="center-subtopic">TESTIMONIAL</h4>
+                    <h1 class="center-desc">Real-World Success Stories<span class="cyan">.</span></h1>
+                </div>
+    
+                <div id="testimonial-content-wrap">
+                    <div class="left">
+                        <div id="testimonial-left-div">
+                            <p>What Others Say?</p>
+                            <p>Reavealing the impact of My Services.</p>
+                            <p>Discover the true impact of my services through valuable <br>client feedback. Hear directly from satisfied clients and gain <br>insights into the quality and value I provide.</p>
+                            <p>
+                                Explore testimonials that highlight successful <br>collaborations, exceptional outcomes, and the overall <br>satisfaction of clients. Let their words showcase the <br> effectiveness and excellence of my work.
+                            </p>
+                            <div >
+                                <a href="#footer-section" id="hireme-btn">
+                                    <i class='bx bxs-briefcase-alt-2'></i>
+                                    <span>Hire Me Now</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+            <div id="testimonial-right-div">
+                <div id="t-card">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <div class="testimonial-card">
+                                    <div class="t-top">
+                                        <div class="testimonial-img" id="t-img1"></div>
+                                        <div class="t-midlle-topics">
+                                            <p>Will Smith</p>
+                                            <p>ABC Company</p>
+                                        </div>
+                                        <i class='bx bxs-quote-right'></i>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci ad asperiores repellendus, amet nemo cupiditate expedita officia doloremque voluptates libero, 
+                                        quisquam voluptatem magnam ipsam dolorem dolorum at reiciendis, laborum recusandae.
+                                    </p>
+                                    <div class="star">
+                                        <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                                        <div class="rating">
+                                            <p>4 / 5</p>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                            </div>
+
+                          <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="t-top">
+                                    <div class="testimonial-img" id="t-img1"></div>
+                                    <div class="t-midlle-topics">
+                                        <p>Will Smith</p>
+                                        <p>ABC Company</p>
+                                    </div>
+                                    <i class='bx bxs-quote-right'></i>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci ad asperiores repellendus, amet nemo cupiditate expedita officia doloremque voluptates libero, 
+                                    quisquam voluptatem magnam ipsam dolorem dolorum at reiciendis, laborum recusandae.
+                                </p>
+                                <div class="star">
+                                    <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                                    <div class="rating">
+                                        <p>4 / 5</p>
+                                    </div>
+                                </div>
+                            </div>
+    
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="t-top">
+                                    <div class="testimonial-img" id="t-img1"></div>
+                                    <div class="t-midlle-topics">
+                                        <p>Will Smith</p>
+                                        <p>ABC Company</p>
+                                    </div>
+                                    <i class='bx bxs-quote-right'></i>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci ad asperiores repellendus, amet nemo cupiditate expedita officia doloremque voluptates libero, 
+                                    quisquam voluptatem magnam ipsam dolorem dolorum at reiciendis, laborum recusandae.
+                                </p>
+                                <div class="star">
+                                    <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                                    <div class="rating">
+                                        <p>4 / 5</p>
+                                    </div>
+                                </div>
+                            </div>
+    
+                          </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                      </div>
+                </div>
+            </div>
+       
+                    
+                </div>
+            </div>
+            <hr>
+        </div>
+        
+        <div class="bg-4">
+            <div id="assignments">
+                <div id="assignments-topics">
+                    <h4 class="center-subtopic">TASK DELIVERABLES</h4>
+                    <h1 class="center-desc">Assignments<span class="cyan">.</span></h1>
+                </div>
+            
+                <div id="a-card">
+                    <div class="swiper mySwiper" id="a-swiper">
+                        <div class="swiper-wrapper">
+
+                          <div class="swiper-slide">
+                
+                                <div class="assignments-card-bg">
+                                    <div class="assignments-middle-circle"></div>
+                                    <div class="assignments-card-content-wrapper">
+                                        <span class="assignments-card-footer-topic">Assignment 01</span>
+                                        <span class="assignments-card-footer-content">Portfolio Req Doc, Wireframe, Mockup</span>
+                                        <a href="https://github.com/KrishanMihiranga/MyPortfolio.git" target="_blank">github <i class='bx bx-link-external'></i></a>
+                                    </div>
+                                </div>
+                    
+                          </div>
+                          <div class="swiper-slide">
+                
+                            <div class="assignments-card-bg">
+                                <div class="assignments-middle-circle"></div>
+                                <div class="assignments-card-content-wrapper">
+                                    <span class="assignments-card-footer-topic">Assignment 02</span>
+                                    <span class="assignments-card-footer-content">Html Structure</span>
+                                    <a href="https://github.com/KrishanMihiranga/MyPortfolio/tree/structure" target="_blank">github <i class='bx bx-link-external'></i></a>
+                                </div>
+                            </div>
+                
+                        </div>
+                          <div class="swiper-slide">
+                
+                            <div class="assignments-card-bg">
+                                <div class="assignments-middle-circle"></div>
+                                <div class="assignments-card-content-wrapper">
+                                    <span class="assignments-card-footer-topic">Assignment 03</span>
+                                    <span class="assignments-card-footer-content">Assignment 03 | CSS Positioning</span>
+                                    <a href="https://github.com/KrishanMihiranga/css-positioning.git" target="_blank">github <i class='bx bx-link-external'></i></a>
+                                </div>
+                            </div>
+                
+                          </div>
+                          <div class="swiper-slide">
+                            
+                            <div class="assignments-card-bg">
+                                <div class="assignments-middle-circle"></div>
+                                <div class="assignments-card-content-wrapper">
+                                    <span class="assignments-card-footer-topic">Assignment 04</span>
+                                    <span class="assignments-card-footer-content">Assignment 04 | CSS Animation</span>
+                                    <a href="https://github.com/KrishanMihiranga/css-animation.git" target="_blank">github <i class='bx bx-link-external'></i></a>
+                                </div>
+                            </div>
+                
+                          </div>
+                          <div class="swiper-slide">
+                
+                            <div class="assignments-card-bg">
+                                <div class="assignments-middle-circle"></div>
+                                <div class="assignments-card-content-wrapper">
+                                    <span class="assignments-card-footer-topic">Assignment 05</span>
+                                    <span class="assignments-card-footer-content">Portfolio</span>
+                                    <a href="https://github.com/KrishanMihiranga/MyPortfolio.git" target="_blank">github <i class='bx bx-link-external'></i></a>
+                                </div>
+                            </div>
+                
+                            </div>
+                          <div class="swiper-slide">
+                
+                            <div class="assignments-card-bg">
+                                <div class="assignments-middle-circle"></div>
+                                <div class="assignments-card-content-wrapper">
+                                    <span class="assignments-card-footer-topic">Assignment 06</span>
+                                    <span class="assignments-card-footer-content">POS Req Doc, Wireframe, Mockup</span>
+                                    <a href="https://github.com/KrishanMihiranga/pos-system.git" target="_blank">github <i class='bx bx-link-external'></i></a>
+                                </div>
+                            </div>
+                
+                            </div>
+                            <div class="swiper-slide">
+                
+                                <div class="assignments-card-bg">
+                                    <div class="assignments-middle-circle"></div>
+                                    <div class="assignments-card-content-wrapper">
+                                        <span class="assignments-card-footer-topic">Assignment 07</span>
+                                        <span class="assignments-card-footer-content">POS SPA</span>
+                                        <a href="https://github.com/KrishanMihiranga/pos-system.git" target="_blank">github <i class='bx bx-link-external'></i></a>
+                                    </div>
+                                </div>
+                    
+                            </div>
+                          <div class="swiper-slide">
+                            
+                            <div class="assignments-card-bg">
+                                <div class="assignments-middle-circle"></div>
+                                <div class="assignments-card-content-wrapper">
+                                    <span class="assignments-card-footer-topic">Assignment 08</span>
+                                    <span class="assignments-card-footer-content">Assignment 08 | JS Queue</span>
+                                    <a href="https://github.com/KrishanMihiranga/JS-Queue.git" target="_blank">github <i class='bx bx-link-external'></i></a>
+                                </div>
+                            </div>
+                
+                          </div>
+                          <div class="swiper-slide">
+                            
+                            <div class="assignments-card-bg">
+                                <div class="assignments-middle-circle"></div>
+                                <div class="assignments-card-content-wrapper">
+                                    <span class="assignments-card-footer-topic">Assignment 09</span>
+                                    <span class="assignments-card-footer-content">Knight Rider Lights</span>
+                                    <a href="https://github.com/KrishanMihiranga/knight-rider.git" target="_blank">github <i class='bx bx-link-external'></i></a>
+                                </div>
+                            </div>
+                
+                          </div>
+                          <div class="swiper-slide">
+                
+                            <div class="assignments-card-bg">
+                                <div class="assignments-middle-circle"></div>
+                                <div class="assignments-card-content-wrapper">
+                                    <span class="assignments-card-footer-topic">Assignment 11</span>
+                                    <span class="assignments-card-footer-content">in-memory POS</span>
+                                    <a href="https://github.com/KrishanMihiranga/pos-system.git" target="_blank">github <i class='bx bx-link-external'></i></a>
+                                </div>
+                            </div>
+                
+                        </div>
+                          
+                          
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                </div>
+            
+                
+                <h5 class="middle-quote topmargin-quote"><span class="cyan">"</span> Embracing challenges, conquering assignments, and evolving as a software engineering trailblazer. <span class="cyan">"</span></h5>
+    
+    
+            </div>
+        </div>
+        
+        <hr>
+        <div id="gallery">
+                <div id="gallery-topic">
+                    <h4 class="center-subtopic">INSPIRING CREATIVITY</h4>
+                    <h1 class="center-desc">Gallery<span class="cyan">.</span></h1>
+                </div>
+                <div class="G-box">
+                    <div class="img-wrapper left"><div class="image image1"></div></div>
+                    <div class="img-wrapper bottom"><div class="image image2"></div></div>
+                    <div class="img-wrapper right"><div class="image image3"></div></div>
+                    <div class="img-wrapper left"><div class="image image4"></div></div>
+                    <div class="img-wrapper bottom"><div class="image image5"></div></div>
+                    <div class="img-wrapper left"><div class="image image6"></div></div>
+                    <div class="img-wrapper bottom"><div class="image image7"></div></div>
+                    <div class="img-wrapper right"><div class="image image8"></div></div>
+                    <div class="img-wrapper bottom"><div class="image image9"></div></div>
+                    <div class="img-wrapper right"><div class="image image10"></div></div>
+                    <div class="img-wrapper left"><div class="image image11"></div></div>
+                    <div class="img-wrapper bottom"><div class="image image12"></div></div>
+                    <div class="img-wrapper right"><div class="image image13"></div></div>
+                </div>
+            
+                <div class="cubes">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+        </div>
+        <hr>
+
+        <footer id="footer-section" class="bottom">
+            <div id="footer-to-content-wrapper">
+                <div id="footer-content">
+                    <div id="find-me" class="top-dt">
+                        <i class='bx bxs-location-plus'></i>
+                        <div>
+                            <h4>Find me</h4>
+                            <span>Bandaragama, Srilanka.</span>
+                        </div>
+                    </div>
+                    <div id="call-me" class="top-dt">
+                        <i class='bx bxs-phone-call' ></i>
+                        <div>
+                            <h4>Call me</h4>
+                            <span>+94774512029</span>
+                        </div>
+                    </div>
+                    <div id="mail-me" class="top-dt">
+                        <i class='bx bxs-envelope-open' ></i>
+                        <div>
+                            <h4>Mail me</h4>
+                            <span>mkrishan2003@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="footer-bottom-wrapper">
+                <div id="footer-bottom-left">
+                    <div id="footer-logo">
+                        <a href="index.html"><img src="Assets/img/syntaXage.logo1-1.png" alt="syntaxage"></a>
+                    </div>
+                    <div class="footer-text" id="fl-txt">
+                        <p>"Kishan, Software Engineering Undergrad, aspiring Full-Stack Developer. Building a versatile skill set for a dynamic tech future. Connect with me!"
+                        </p>
+                    </div>
+                    <div id="footer-socials">
+                        <span>Find me on</span>
+                    </div>
+                    <div class="social-media" id="fl-social-media">
+                        <a href="https://wa.me/0774512029"  target="_blank" class="git"><i class='bx bxl-whatsapp'></i></a>
+                        <a href="https://instagram.com/xxp3cto" target="_blank" class="instagram"><i class='bx bxl-instagram' ></i></a>
+                        <a href="https://linkedin.com/in/krishan mihiranga" target="_blank" class="linkedIn"><i class='bx bxl-linkedin' ></i></a>
+                    </div>
+                </div>
+                <div id="footer-bottom-center">
+                    <div class="footer-center-heading">
+                        <h3>Useful Links</h3>
+                    </div>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#aboutMe">about</a></li>
+                        <li><a href="#services">services</a></li>
+                        <li><a href="#portfolio">portfolio</a></li>
+                        <li><a href="#footer-section">Contact</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#skills-sec">Skills</a></li>
+                        <li><a href="#assignments">Assignments</a></li>
+                        <li><a href="#footer-section">Contact me</a></li>
+                        <li><a href="#">Latest News</a></li>
+                    </ul>
+                </div>
+                <div id="footer-bottom-right">
+                    <div class="footer-center-heading">
+                        <h3>Contact</h3>
+                    </div>
+                    <div class="footer-text" id="fbr-txt">
+                        <p>Stay in touch with me! Fill out the form below to connect.</p>
+                    </div>
+                    <div class="subscribe-form">
+                        <form action="mailto:mkrishan2003@gmail.com" target="_blank" method="post">
+                            <input type="text" placeholder="Name" name="name">
+                            <input type="email" placeholder="Email Address" name="email">
+                            <input type="text" placeholder="Subject" name="subject">
+                            <textarea name="message" id="" cols="30" rows="5" placeholder="Message"></textarea>
+                            <button><i class='bx bxl-telegram'></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="copyright-area">
+            <div class="copyright-text">
+                 <p>Copyright &copy; 2023, All Right Reserved <a href="https://instagram.com/xxp3cto">Kishan</a></p>
+            </div>
+        
+        </div>
+        
+    
+</body>
+</html>

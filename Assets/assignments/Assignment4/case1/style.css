@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' , sans-serif;
+    color: white;
+}
+aside{
+    height: fit-content;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+div{
+    width: 20vw;
+    height: 10vh;
+    border-radius: 15px;
+    background-color: purple;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 2vw;
+    font-weight: 600;
+    box-shadow: 3px 3px 5px black;
+    margin: 20px 0 20px 0;
+    position: relative;
+    left: -13vw;
+    cursor: pointer;
+    transition-duration: .5s;
+    transition-property: left;
+    transition-timing-function: linear;
+}
+div:hover{
+    left: -15px;
+}
+i{
+    font-size: 3vw;
+}
